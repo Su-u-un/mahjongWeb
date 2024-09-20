@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《天月麻將》官方網站</title>
+    <link rel="icon" href="../mahjong/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../mahjong/css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="../mahjong/js/flexible.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* 防止滚动条出现 */
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* 填满视口高度 */
+            overflow: hidden;
+        }
+
+        .box {
+    opacity: 0; /* 默认透明 */
+    transition: opacity 0.5s ease; /* 淡入淡出效果 */
+    position: absolute; /* 绝对定位以重叠盒子 */
+    width: 100%; /* 使盒子宽度占满 */
+    height: 100%; /* 使盒子高度占满 */
+}
+
+.visible {
+    opacity: 1; /* 使当前盒子可见 */
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div id="box1" class="box active">盒子 1</div>
+        <div id="box2" class="box">盒子 2</div>
+        <div id="box3" class="box">
+            <div class="appointTitle">盒子 3</div>
+            <div class="prizeBox">
+                <div class="prize">奖品 A</div>
+                <div class="prize">奖品 B</div>
+                <div class="prize">奖品 C</div>
+            </div>
+        </div>
+        <div id="box4" class="box">盒子 4</div>
+        <div id="box5" class="box">盒子 5</div>
+        <div id="box6" class="box">盒子 6</div>
+    </div>
+
+    <script>
+        let currentIndex = 0; // 当前盒子的索引
+        const boxes = document.querySelectorAll('.box');
+
+        function changeBox(newIndex) {
+            if (currentIndex !== newIndex && newIndex >= 0 && newIndex < boxes.length) {
+                const currentBox = boxes[currentIndex];
+                const nextBox = boxes[newIndex];
+
+                // 先淡出当前盒子
+                currentBox.classList.remove('active');
+                
+                // 等待淡出动画结束后再处理下一个盒子
+                currentBox.addEventListener('transitionend', function handler() {
+                    currentBox.removeEventListener('transitionend', handler); // 移除事件监听器
+                    currentBox.style.opacity = '0'; // 确保当前盒子不再显示
+                });
+
+                // 使下一个盒子可见并淡入
+                nextBox.style.opacity = '1';
+                nextBox.classList.add('active'); // 添加活动类
+                currentIndex = newIndex; // 更新当前索引
+            }
+        }
+
+        // 触摸事件变量
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        // 监听触摸事件
+        document.addEventListener('touchstart', (event) => {
+            touchStartX = event.changedTouches[0].screenX; // 记录触摸起始位置
+        });
+
+        document.addEventListener('touchend', (event) => {
+            touchEndX = event.changedTouches[0].screenX; // 记录触摸结束位置
+            handleGesture(); // 处理手势
+        });
+
+        function handleGesture() {
+            if (touchEndX < touchStartX - 50) {
+                // 向左滑动
+                changeBox(currentIndex + 1);
+            } else if (touchEndX > touchStartX + 50) {
+                // 向右滑动
+                changeBox(currentIndex - 1);
+            }
+        }
+    </script>
+</body>
+</html>

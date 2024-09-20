@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>《天月麻將》官方網站</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/roleInfo.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./js/roleInfo.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <div class="loading-container" id="loadingContainer">
+        <img id="character" src="./images/draft/icon.png" alt="角色" />
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="loading-text" id="loadingText">Loading... 0%</div>
+    </div>
+
+    <div class="content" id="content">
+   
+        <!-- <div class="sidebar">
+            <div class="nav-item" data-target="box1"></div>
+            <div class="nav-item" data-target="box2"></div>
+            <div class="nav-item" data-target="box3"></div>
+            <div class="nav-item" data-target="box4"></div>
+            <div class="nav-item" data-target="box5"></div>
+        </div> -->
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="guidebox">
+                <a href="#box1"class="nav-link" ><i style="font-size: 0.14rem;">HOME</i><br><i>主頁</i></a>
+                <a href="#box2" class="nav-link"><i style="font-size: 0.14rem;">EVENT</i><br>資格預約</a>
+                <!-- <a href="#box3" class="nav-link"><i style="font-size: 0.14rem;">PRIZE</i><br>預約獎勵</a> -->
+                <a href="#box4" class="nav-link"><i style="font-size: 0.14rem;">GAMEPLAY</i><br>遊戲畫面</a>
+                <a href="#box5" class="nav-link"><i style="font-size: 0.14rem;">CHARACTER</i><br>角色介紹</a>
+                <!-- <a href="#box6" class="nav-link" ><i style="font-size: 0.14rem;">ABOUT</i><br>注意事項</a> -->
+            </div>
+            <div class="linkbox">
+                <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank"></a>
+                <a href="https://www.instagram.com/amatsukimahjong/" target="_blank"></a>
+                <a href="https://www.threads.net/@amatsukimahjong" target="_blank"></a>
+                <a href="https://x.com/AmatsukiMa55192" target="_blank"></a>
+            </div>
+        </div>
+      <div class="box1" id="box1" >
+        <div class="MainTitle" ></div>
+        <!-- <div class="ViceTitle1"></div> -->
+        <div class="ViceTitle2"></div>
+        <!-- <div class="Appoint"></div> -->
+        <!-- <div class="carousel">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url('./images/draft/2.png');"></div>
+                  <div class="swiper-slide" style="background-image: url('./images/draft/3.png');"></div>
+                  <div class="swiper-slide" style="background-image: url('./images/draft/4.png');"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div> -->
+      <!-- <div class="appleStore"></div>
+      <div class="androidStore"></div> -->
+      <div class="button" onclick="toLink('https://linktr.ee/amatsukimahjong')"></div>
+       <div class="mouse"></div>
+    </div>
+      <div class="box2" id="box2">
+        <div class="cover">
+            <!-- <div class="font" style="text-align: center;width: 100%;line-height: 2.5rem; color: white;font-size: 0.3rem;font-weight: 700;">  COMING SOON……</div> -->
+        </div>
+        <!-- <div class="TopBg"></div> -->
+        <!-- <div class="logo"></div>  -->
+        <!-- <div class="guidebox">
+            <div class="iconBox">
+               <div class="icon" onclick="toLink('https://discord.gg/nyKfJUsF')"></div>
+               <div class="icon" onclick="toLink('https://www.instagram.com/amatsukimahjong/')"></div>
+               <div class="icon" onclick="toLink('https://www.facebook.com/profile.php?id=61564464227737')"></div>
+               <div class="icon" onclick="toLink('https://x.com/AmatsukiMa55192')"></div>
+            </div>
+            <div class="linkBox">
+                <a href="#box1"class="nav-link1" ><i style="font-size: 0.14rem;">HOME</i><br><i>主頁</i></a>
+                <a href="#box2" class="nav-link1"><i style="font-size: 0.14rem;">EVENT</i><br>資格預約</a>
+                <a href="#box3" class="nav-link1"><i style="font-size: 0.14rem;">PRIZE</i><br>預約獎勵</a>
+                <a href="#box4" class="nav-link1"><i style="font-size: 0.14rem;">GAMEPLAY</i><br>遊戲畫面</a>
+                <a href="#box5" class="nav-link1"><i style="font-size: 0.14rem;">CHARACTER</i><br>角色介紹</a>
+                <a href="#box6" class="nav-link1" ><i style="font-size: 0.14rem;">ABOUT</i><br>注意事項</a>
+            </div>
+        </div> -->
+        <!-- <div class="role">
+
+        </div> -->
+        <div class="appointContent">
+        <input type="text" class="phoneInput" placeholder="輸入手機號完成事前登錄預約" maxlength="8">
+        <div class="appoint"></div>
+        <div class="prizeLink"></div>
+    </div>
+      </div>
+      <!-- <div class="box3" id="box3">
+    <div class="logo"></div>  
+       <div class="guidebox">
+            <div class="iconBox">
+                <div class="icon" onclick="toLink('https://discord.gg/nyKfJUsF')"></div>
+                <div class="icon" onclick="toLink('https://www.instagram.com/amatsukimahjong/')"></div>
+                <div class="icon" onclick="toLink('https://www.facebook.com/profile.php?id=61564464227737')"></div>
+                <div class="icon" onclick="toLink('https://x.com/AmatsukiMa55192')"></div>
+            </div>
+            <div class="linkBox">
+                <a href="#box1" class="nav-link-child" ><i style="font-size: 0.13rem;">HOME</i><br>主頁</a>
+                <a href="#box2" class="nav-link-child"><i style="font-size: 0.13rem;">EVENT</i><br>資格預約</a>
+                <a href="#box1" class="nav-link-child" ><i style="font-size: 0.13rem;">PRIZE</i><br>預約獎勵</a>
+                <a href="#box4" class="nav-link-child"><i style="font-size: 0.13rem;">GAMEPLAY</i><br>遊戲畫面</a>
+                <a href="#box5" class="nav-link-child"><i style="font-size: 0.13rem;">CHARACTER</i><br>角色介紹</a>
+                <a href="#box6" class="nav-link-child"><i style="font-size: 0.13rem;">ABOUT</i><br>注意事項</a>
+            </div>
+        </div>
+        <div class="prize"></div>
+         <div class="role1"></div>
+      </div> 
+ -->
+      <div class="box4" id="box4">
+        <!-- <div class="nav">
+            <div class="logo"></div>
+            <div class="guidebox">
+                <a href="#box1"  class="nav-link-child1"><i style="font-size: 0.13rem;">HOME</i><br>主頁</a>
+                <a href="#box2" class="nav-link-child1"><i style="font-size: 0.13rem;">EVENT</i><br>資格預約</a>
+                <a href="#box1" class="nav-link-child1"><i style="font-size: 0.13rem;">PRIZE</i><br>預約獎勵</a>
+                <a href="#box4" class="nav-link-child1"><i style="font-size: 0.13rem;">GAMEPLAY</i><br>遊戲畫面</a>
+                <a href="#box5" class="nav-link-child1"><i style="font-size: 0.13rem;">CHARACTER</i><br>角色介紹</a>
+                <a href="#box6" class="nav-link-child1"><i style="font-size: 0.13rem;">ABOUT</i><br>注意事項</a>
+            </div>
+            <div class="linkbox">
+                <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank"></a>
+                <a href="https://www.instagram.com/amatsukimahjong/" target="_blank"></a>
+                <a href="https://discord.gg/nyKfJUsF" target="_blank"></a>
+                <a href="https://x.com/AmatsukiMa55192" target="_blank"></a>
+            </div>
+        </div> -->
+       <!-- <div class="logo"></div>-->
+        <!-- <div class="character1"></div> -->
+        <!-- <div class="imgBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/draft/1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="./images/draft/2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="./images/draft/3.png" alt="Slide 3"></div>
+                    <div class="swiper-slide"><img src="./images/draft/4.png" alt="Slide 4"></div>
+                    <div class="swiper-slide"><img src="./images/draft/5.png" alt="Slide 5"></div>
+                </div>
+                 Add Pagination 
+                
+            </div>
+        </div> -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/box4/1.png" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./images/box4/2.png" alt="Slide 1"></div>
+            
+              <div class="swiper-slide"><img src="./images/box4/4.png" alt="Slide 1"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        <!-- <div class="gameplay"></div> -->
+      </div> 
+         <div class="box5" id="box5" >
+            <!-- <div class="nav">
+                <div class="logo"></div> -->
+                <!-- <div class="guidebox">
+                    <a href="#box1"class="nav-link2" ><i style="font-size: 0.13rem;">HOME</i><br><i>主頁</i></a>
+                    <a href="#box2" class="nav-link2"><i style="font-size: 0.13rem;">EVENT</i><br>資格預約</a>
+                    <a href="#box2" class="nav-link2"><i style="font-size: 0.14rem;">PRIZE</i><br>預約獎勵</a>
+                    <a href="#box4" class="nav-link2"><i style="font-size: 0.13rem;">GAMEPLAY</i><br>遊戲畫面</a>
+                    <a href="#box5" class="nav-link2"><i style="font-size: 0.13rem;">CHARACTER</i><br>角色介紹</a>
+                    <a href="#box6" class="nav-link2" ><i style="font-size: 0.14rem;">ABOUT</i><br>注意事項</a>
+                </div>
+                <div class="linkbox">
+                    <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank"></a>
+                    <a href="https://www.instagram.com/amatsukimahjong/" target="_blank"></a>
+                    <a href="https://discord.gg/nyKfJUsF" target="_blank"></a>
+                    <a href="https://x.com/AmatsukiMa55192" target="_blank"></a>
+                </div>
+            </div> -->
+            <div class="character-info" id="character-info">
+                <div class="characterName">
+                <p id="character-en-name" class="character-en-name">Little Fox Chiyo</p>
+                <p id="character-name" class="character-name">小狸千代</p>
+            </div>
+            <div class="roleShadow" id="roleShadow"></div>
+            <div class="character-introBox">
+            <textarea id="character-intro" rows="5" readonly>
+                永遠宅在家的電競高手，平常除了貓貓之外沒有什麼特別喜歡的東西，無力氣、電波系，喜歡麻將。體力值為零。 但在pvp遊戲中勝負欲極強。因為滑鼠、鍵盤、手機同時壞掉了，不得不出外的時候偶然遇上了主角，受到主角的幫助後，加了好友一起打麻將。
+            </textarea>
+        </div>
+                <div class="audio" id="audio" onclick="playVoice()">
+                    <audio id="character-audio" src=""></audio>
+                </div>
+            </div>
+          
+                <div class="avatarBox">
+                    <div class="avatar" onclick="changeCharacter('Little Fox Chiyo', '小狸千代',  './images/roleInfo/role1.png', './images/roleInfo/roleShadow1.png','永遠宅在家的電競高手，平常除了貓貓之外沒有什麼特別喜歡的東西，無力氣、電波系，喜歡麻將。體力值為零。 但在pvp遊戲中勝負欲極強。因為滑鼠、鍵盤、手機同時壞掉了，不得不出外的時候偶然遇上了主角，受到主角的幫助後，加了好友一起打麻將。', './audio/1.wav', 1)"></div>
+                    <div class="avatar" onclick="changeCharacter('Kujo Ruri', '九條瑠璃', './images/roleInfo/role2.png', './images/roleInfo/roleShadow2.png','瑠璃水晶品牌設計師——雪希的女兒，沉厚寡言、沒甚麼表情變化、神秘。留著中短白髮，身穿運動服。喜歡甜食，小時候因為吃太多而變胖，為了健康開始做運動。久而久之運動成為了習慣。 身體既柔軟又具備力量，和母親基本相反，完全是直覺派行事，比較少擔心未來的事情。 無論學什麼運動都是一學就會，最近在沉迷跑酷。而母親則非常非常擔心。討厭穿太過漂亮和花巧的衣服；覺得媽媽實在太煩。常常在不同地方跑來跑去，運動神經一流。 ', './audio/2.wav', 2)"></div>
+                    <div class="avatar" onclick="changeCharacter('Yume Miya Meri', '夢宮明里', './images/roleInfo/role3.png','./images/roleInfo/roleShadow3.png','永遠宅在家的電競高手，平常除了貓貓之外沒有什麼特別喜歡的東西，無力氣、電波系，喜歡麻將。體力值為零。 但在pvp遊戲中勝負欲極強。因為滑鼠、鍵盤、手機同時壞掉了，不得不出外的時候偶然遇上了主角，受到主角的幫助後，加了好友一起打麻將。', './audio/1.wav', 3)"></div>
+                    <div class="avatar" onclick="changeCharacter('Charlotte', '夏洛特', './images/roleInfo/role4.png','./images/roleInfo/roleShadow4.png', '二十一歲，在童年時因為某種原因失去了右腳。熱愛解謎。常常會發出較大的聲音。 因為城市尚算和平，作為偵探的她一般都是去「尋找不見了的貓」、「女朋友是不是出軌了」、「海月館的老千報告」等等的任務，但偶然也會遇上一些較為危險的任務。 非常有活力，基本上常常處於「耍白痴」←→「超聰明」，兩者中間來回穿梭。但因為平板的身材和殘缺的身體，內心非常自卑。 平常沒事就會去海月館打麻將。最近，稍微去得多了一些。 表面是個自作聽明、自信的女孩。實際上害怕寂寞，用搞笑和誇張的形式去吸引他人注意的孤獨女孩。 「等等我啊，不要跑那麼快。」', './audio/2.wav', 4)"></div>
+                    <div class="avatar" onclick="changeCharacter('Melina', '梅麗娜', './images/roleInfo/role5.png','./images/roleInfo/roleShadow5.png', '魔法師（自稱），穿著性感的大姐姐，有著年輕的外表但與人交談時會無意中使用死語。注重外貌，會花很多時間保養皮膚和研究美妝。在來到海月街之後第一次知道智能手機，對於平常人覺得平平無奇的科技會感到驚訝，不禁讓人懷疑其年齡。與調酒師大叔意外地聊得來，稱自己17歲但卻會在酒館肆無忌憚地喝酒。 實際上是另一位異界來者，和照／海月都來自天月世界以外的世界。 ', './audio/1.wav', 5)"></div>
+                </div>
+        
+            <div class="roleTitle">人物背景</div>
+            <div class="roleShadowRectangle"></div>
+            <div class="character-image" id="character-image"></div>
+       
+      </div>
+      <!-- <div class="box6 box" id="box6">
+
+      </div> -->
+    </div>
+
+    </body>
+      <!-- <script src="./js/carousel.js"></script> -->
+      <script src="./js/popup.js"></script>
+      <script>
+      let screenWidth = window.innerWidth;
+        // 根据屏幕宽度判断跳转页面
+        if (screenWidth < 768) {
+        // 屏幕宽度小于 768px，跳转至移动端页面
+        window.location.href = "../dist/index.html";
+        }
+        </script>
+      <script>
+        const logo = document.querySelector('.box2 .logo');
+        // const guidebox = document.querySelector('.box2 .guidebox');
+        const role = document.querySelector('.box2 .role');
+        const input = document.querySelector('.box2 .phoneInput');
+        
+        const observerOptions = {
+            root: null, // 使用视口作为根
+            rootMargin: '0px',
+            threshold: 0.5 // 当元素可见 10% 时触发
+        };
+        
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 当元素进入视口时添加 active 类
+                    // logo.classList.add('active');
+                    // guidebox.classList.add('active');
+                    // role.classList.add('active');
+                }
+            });
+        };
+        
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        observer.observe(input); // 观察 input 元素
+        </script>
+      <script>
+       const inputPhone = document.querySelector('.phoneInput');
+
+inputPhone.addEventListener('input', function() {
+    // 仅允许数字输入
+    this.value = this.value.replace(/\D/g, '');
+
+    // 验证手机号格式
+    if (this.value.length > 8) {
+        this.value = this.value.slice(0, 8); // 限制为8位数字
+    }
+});
+      </script>
+           <script>
+            // const logo1 = document.querySelector('.box3 .logo');
+            // const guidebox1 = document.querySelector('.box3 .guidebox');
+            // const role1 = document.querySelector('.box3 .role1');
+            // const prize1 = document.querySelector('.box3 .prize'); // 添加 prize 元素选择器
+            
+            const observerOptions1 = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observerCallback1 = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // logo.classList.remove('active');
+                    // guidebox.classList.remove('active');
+                    role.classList.remove('active');
+            
+                        // 添加 active 类以触发动画
+                        // logo1.classList.add('active');
+                        // guidebox1.classList.add('active');
+            
+                        // 使用 setTimeout 控制动画顺序
+                        setTimeout(() => {
+                            // prize1.classList.add('active'); // 激活 prize 动画
+                        }, 1200); // 等待 logo 和 guidebox 动画结束
+            
+                        setTimeout(() => {
+                            // role1.classList.add('active'); // 激活 role 动画
+                        }, 1300); // 等待 prize 动画结束
+                    }
+                });
+            };
+            
+            const observer1 = new IntersectionObserver(observerCallback1, observerOptions1);
+            // observer1.observe(role); // 观察 role 元素
+            </script>
+          <script>
+               
+        //   const character1 = document.querySelector('.box4 .character1');
+        //   const gameplay = document.querySelector('.box4 .gameplay'); 
+          const box4 = document.querySelector('.box4 '); 
+          // 添加 prize 元素选择器
+          
+          const observerOptions2= {
+              root: null,
+              rootMargin: '0px',
+              threshold: 0.6
+          };
+          
+          const observerCallback2= (entries) => {
+                    //    logo1.classList.remove('active');
+                    //     guidebox1.classList.remove('active');
+                        // prize1.classList.remove('active');
+                        // role1.classList.remove('active');
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      // 当元素进入视口时添加 active 类
+                    //   character1.classList.add('active');
+                    //   gameplay.classList.add('active');
+                      // 使用 setTimeout 移除 active 类，以便下次动画可以重新播放
+                      setTimeout(() => {
+
+                      }, 1500); // 等待动画结束再移除
+                  }
+              });
+          };
+          
+          const observer2= new IntersectionObserver(observerCallback2, observerOptions2);
+          observer2.observe(box4); // 观察 role 元素
+                </script>
+              <!-- <script>
+                document.querySelectorAll('.nav-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const targetId = item.getAttribute('data-target'); // 获取目标ID
+                        const targetElement = document.getElementById(targetId); // 获取目标元素
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' }); // 平滑滚动到目标元素
+                        }
+        
+                        // 清除所有激活状态
+                        document.querySelectorAll('.nav-item').forEach(nav => {
+                            nav.classList.remove('active');
+                            nav.style.height = '30px'; // 重置高度
+                        });
+        
+                        // 添加当前激活状态
+                        item.classList.add('active');
+                        item.style.height = '60px'; // 设置激活状态的高度
+                    });
+                });
+            </script> -->
+              <!-- <script>
+                // 为所有的 <a> 标签设置平滑滚动
+                document.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', (event) => {
+                        const targetId = link.getAttribute('href').substring(1); // 获取目标ID
+                        const targetElement = document.getElementById(targetId); // 获取目标元素
+        
+                        if (targetElement) {
+                            event.preventDefault(); // 防止默认行为
+                            targetElement.scrollIntoView({ behavior: 'smooth' }); // 平滑滚动到目标元素
+                        }
+        
+                        // 清除所有激活状态
+                        document.querySelectorAll('a').forEach(nav => nav.classList.remove('active'));
+        
+                        // 添加当前激活状态
+                        link.classList.add('active');
+                    });
+                });
+            </script> -->
+            <script>
+                 function toLink(url) {
+                // 添加点击事件
+                    window.open(url, '_blank'); // 在新标签页中打开链接
+                }
+            </script>
+<script>
+    let currentIndex = 0; // 当前盒子的索引
+    const boxes = document.querySelectorAll('.box');
+    const links = document.querySelectorAll('.nav-link');
+    const links1 = document.querySelectorAll('.nav-link1');
+    const links2 = document.querySelectorAll('.nav-link2');
+     const navchild = document.querySelectorAll('.nav-link-child');
+     const navchild1 = document.querySelectorAll('.nav-link-child1');
+ 
+    const navItems = document.querySelectorAll('.nav-item');
+    let isAnimating = false; // 动画标志
+    
+    // 为每个链接和导航条添加点击事件
+    // links.forEach((link, index) => {
+    //     link.addEventListener('click', (event) => {
+    //         event.preventDefault(); // 防止默认行为
+    //         changeBox(index); // 切换盒子
+    //     });
+    // });
+    
+    // links1.forEach((link, index) => {
+    //     link.addEventListener('click', (event) => {
+    //         event.preventDefault(); // 防止默认行为
+    //         changeBox(index); // 切换盒子
+    //     });
+    // });
+    links2.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // 防止默认行为
+            changeBox(index); // 切换盒子
+        });
+    });
+    navchild.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // 防止默认行为
+            changeBox(index); // 切换盒子
+        });
+    });
+    navchild1.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // 防止默认行为
+            changeBox(index); // 切换盒子
+        });
+    });
+
+    navItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            changeBox(index); // 切换盒子
+        });
+    });
+    
+ 
+    
+ 
+    </script>
+      <!-- <script>
+      var swiper = new Swiper('.swiper-container', {
+    initialSlide: 1, // 设置初始显示的滑块为第二张（索引从0开始）
+    slidesPerView: 3,
+    spaceBetween: 30, // 调整滑块之间的间距
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    on: {
+        slideChangeTransitionStart: function () {
+            this.slides.forEach((slide, index) => {
+                if (index === this.activeIndex) {
+                    slide.style.transform = 'scale(2)';
+                } else {
+                    slide.style.transform = 'scale(1)';
+                }
+            });
+        }
+    }
+});
+
+// 在初始化后立即调用一次，以设置初始滑块的样式
+swiper.slides.forEach((slide, index) => {
+    if (index === swiper.activeIndex) {
+        slide.style.transform = 'scale(2)';
+    } else {
+        slide.style.transform = 'scale(1)';
+    }
+});
+
+      </script> -->
+      <script>
+       var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+      </script>
+
+</html>

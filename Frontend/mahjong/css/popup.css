@@ -1,0 +1,63 @@
+.loading-container {
+    text-align: center;
+    background: url(../images/draft/popup.png) no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.loading-container img {
+    position: absolute;
+    width: 4rem;
+    height: 2.4rem;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0) rotateY(0); /* 先平移再旋转 */
+    animation: rotate 4s linear infinite; /* 旋转动画 */
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -5%) rotateY(0);
+    }
+   35% {
+        transform: translate(-50%, 0%) rotateY(360deg);
+    }
+    50%{
+        transform: translate(-50%, 5%) rotateY(360deg);
+    }
+    75%{
+        transform: translate(-50%, 0%) rotateY(360deg);
+    }
+    100% {
+        transform: translate(-50%, -5%) rotateY(0deg);
+    }
+}
+.progress {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 0.067rem;
+    width: 0;
+    background: #9AC2FF;
+    transition: width 0.1s;
+}
+.loading-text {
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.18rem;
+    color: #5B89BB;
+}
+.content {
+    display: none; /* 隐藏内容 */
+    opacity: 0;
+    transition: opacity 1s ease; /* 淡入效果 */
+}
