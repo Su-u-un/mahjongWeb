@@ -1,0 +1,26 @@
+body{
+  overflow-x: hidden;
+  width: 10rem;
+}
+#app{
+  overflow-x: hidden;
+  width: 10rem;
+}
+.w{
+  width: 10rem;
+  margin: 0 auto;
+ }
+ *{
+  margin: 0;
+ }
+@font-face {
+  font-family: 'myFont';
+  src: url('./GenSenRounded-H.ttc');
+}
+
+html{
+  font-family: 'myFont';
+}
+a {
+  text-decoration: none;
+}

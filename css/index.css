@@ -1,0 +1,438 @@
+@media (max-width:478px) {
+  .header_web{
+    display: none;
+  }
+  .header_phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:10rem;
+    height:1.6rem;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+  }
+  .bg_phone{
+    display: block;
+    position: relative;
+    width: 10rem;
+    height: 21.68rem;
+    background: url(../images/box1/home_phone.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg1{
+    display: none;
+  }
+  .content .text{
+    position: absolute;
+    top: 1.35rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
+  }
+  .content p {
+    margin-bottom: 0.1rem;
+  }
+  .bg2 .text{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
+  }
+  .bg2 p {
+    margin-bottom: 0.1rem;
+  }
+}
+
+@media (min-width:478px) {
+  .header_phone {
+    display: none;
+  }
+
+  .header_web {
+    position:fixed;
+    top:0;
+    left:0.25rem;
+    width: 9.5rem;
+    height: 0.55rem;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .bg1{
+    position: relative;
+    width: 10rem;
+    height: 5.62rem;
+    background: url(../images/box1/home_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg_phone{
+    display: none;
+  }
+  .bg2 .text{
+    position: absolute;
+    top: 1.35rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.25rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
+  }
+  .content .text{
+    position: absolute;
+    top: 1.35rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.25rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
+  }
+}
+
+.line1 {
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 10rem;
+  height: 1.4rem;
+  z-index:10;
+  background: url(../images/content/line1.png) no-repeat ;
+  background-size: 100%;
+}
+
+.line4 {
+position: absolute;
+top: -0.6rem;
+left: 0;
+width: 10rem;
+height: 1.4rem;
+z-index:10;
+background: url(../images/content/line4.png) no-repeat ;
+background-size: 100%;
+}
+.line5 {
+position: absolute;
+top: -0.6rem;
+left: 0;
+width: 10rem;
+height: 1.4rem;
+z-index:10;
+background: url(../images/content/line5.png) no-repeat ;
+background-size: 100%;
+}
+
+@font-face
+{
+    font-family: 'cubic11';
+    src: url('../assets/GenSenRounded-B.ttc');
+    font-weight: normal;  
+    font-style: normal;  
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    overflow-x: hidden;
+    width: 10rem;
+  }
+  *{
+  margin: 0;
+  }
+  .w{
+  width: 10rem;
+  margin: 0 auto;
+  }
+  .header_web a img{
+    width:0.28rem;
+  }
+
+  .header_phone .btn{
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    box-shadow: #5fffff 0 0.01rem 0.03rem;
+    height:1rem;
+  }
+  #menu a img{
+    width:1rem;
+  }
+.bg1 .logo{
+    position: absolute;
+    bottom: 1.8rem;
+    height: 2.5rem;
+    width: 5rem;
+    background: url(../images/box1/logo.png) no-repeat;
+    background-size: 100%;
+}
+.bg1 .btn{
+  position: absolute;
+  bottom: 0.9rem;
+  left:1.4rem;
+  height: 1.4rem;
+  width: 3.2rem;
+  background: url(../images/box1/home_btn.svg) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.bg1 .text{
+  position: absolute;
+  bottom:0;
+  right:.4rem;
+  height: 5rem;
+  width: 1.2rem;
+  background: url(../images/box1/home_text.png) no-repeat;
+  background-size: 100%;
+}
+
+.bg_phone .logo{
+  position: absolute;
+  top: 12.3rem;
+  left:0.5rem;
+  height: 5rem;
+  width: 9rem;
+  background: url(../images/box1/logo.png) no-repeat;
+  background-size: 100%;
+}
+.bg_phone .btn{
+position: absolute;
+bottom: 2.5rem;
+left:1.3rem;
+height: 3.1rem;
+width: 8rem;
+background: url(../images/box1/home_btn.svg) no-repeat;
+background-size: 100%;
+cursor: pointer;
+}
+.bg_phone .text{
+position: absolute;
+top:3.2rem;
+left:1rem;
+height: 9.3rem;
+width: 2.5rem;
+background: url(../images/box1/home_text.png) no-repeat;
+background-size: 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 14.5rem;
+  background: url(../images/content/content_bg.png) no-repeat ;
+  background-size: 100%;
+}
+
+
+
+.content .line2 {
+  position: absolute;
+  top: 3.5rem;
+  height: 1.37rem;
+  width: 100%;
+  background: url(../images/content/line2.png) no-repeat ;
+  background-size: 100%;
+}
+
+.content .register{
+  position: absolute;
+  left:1.5rem;
+  top: 4.8rem;
+  height: 3.9rem;
+  width: 7rem;
+  background: url(../images/content/register.png) no-repeat ;
+  background-size: 100%;
+}
+
+.content .line3 {
+  position: absolute;
+  top: 8.5rem;
+  height: 1.37rem;
+  width: 100%;
+  background: url(../images/content/line3.png) no-repeat ;
+  background-size: 100%;
+}
+
+.content .swiper{
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .swiper-slide {
+  display: flex;
+  gap:4rem;
+  width:6rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+.content .swiper-slide iframe {
+  display: block;
+  width: 6rem;
+  height:3.38rem;
+  object-fit: cover;
+  border:0.03rem solid #537fb6;
+  border-radius: 0.1rem;
+}
+
+.content .swiper-slide img{
+  display: block;
+  width: 6rem;
+  object-fit: cover;
+  border:0.03rem solid #537fb6;
+  border-radius: 0.1rem;
+}
+
+.left_1 {
+  position: absolute;
+  top: 11rem;
+  left: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  z-index:10;
+  background: url(../images/role/l.png) no-repeat ;
+  background-size: 100%;
+}
+
+.right_1 {
+  position: absolute;
+  top: 11rem;
+  right: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  z-index:10;
+  background: url(../images/role/r.png) no-repeat ;
+  background-size: 100%;
+}
+
+.left_2 {
+  position: absolute;
+  top: 2.9rem;
+  left: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  z-index:10;
+  background: url(../images/role/l.png) no-repeat ;
+  background-size: 100%;
+}
+
+.right_2 {
+  position: absolute;
+  top: 2.9rem;
+  right: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  z-index:10;
+  background: url(../images/role/r.png) no-repeat ;
+  background-size: 100%;
+}
+
+.role {
+  position: relative;
+  width: 100%;
+  height:7.9rem;
+  background: url(../images/role/role_bg.png) no-repeat ;
+  background-size: 100%;
+}
+
+.role .swiper{
+  position: absolute;
+  top: 0.1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.role .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.role .swiper-slide img{
+  display: block;
+  width: 10rem;
+  object-fit: cover;
+}
+
+.role .avatar{
+  position: absolute;
+  bottom:0.3rem;
+  width:10rem;
+  display: flex;
+  gap:0.5rem;
+}
+.role .avatar img{
+  z-index:10;
+  width:1.5rem;
+}
+
+.bg2{
+    position: relative;
+    width: 100%;
+    height: 9.35rem;
+    background: url(../images/box2/attention.png) no-repeat ;
+    background-size: 100%;
+}
+
+.bg2 .private{
+  position: absolute;
+  bottom: 1rem;
+  left:1.5rem;
+  height: 0.85rem;
+  width: 2.9rem;
+  background: url(../images/box2/private.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.bg2 .service{
+  position: absolute;
+  bottom: 1rem;
+  right:1.5rem;
+  height: 0.85rem;
+  width: 2.9rem;
+  background: url(../images/box2/service.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.bg2 .offical {
+  position: absolute;
+  bottom: 0;
+  right:3.5rem;
+  height: 0.85rem;
+  width: 2.9rem;
+  background: url(../images/box2/official.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}

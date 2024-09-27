@@ -9,7 +9,7 @@ app.use(express.static('./'));
 
 app.get('/', (req, res) => {
     
-    res.redirect('/Frontend/mahjong/index.html');
+    res.redirect('/index.html');
 });
 
 const options = {
@@ -18,6 +18,6 @@ const options = {
     ca: fs.readFileSync('./key/mahjong.ca-bundle') // 如果需要
 };
 
-https.createServer(options, app).listen(8080, () => {
-    console.log('Server is running on https://localhost:8080');
+https.createServer(options, app).listen(443, () => {
+    console.log('Server is running on https://localhost:443');
 });
