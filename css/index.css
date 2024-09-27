@@ -446,7 +446,7 @@ background-size: 100%;
 
 /* leaf animations */
 
-#leaves {position:absolute;z-index: 400;top:-1rem;width:100%;text-align: left;}
+#leaves {position:absolute;z-index: 400;top:-0rem;width:100%;text-align: left;}
 
 #leaves i {
     display: inline-block;
@@ -457,11 +457,11 @@ background-size: 100%;
     border-radius: 5% 40% 70%;
     box-shadow: inset 0px 0px 1px #222;
     z-index: 1;
-    -webkit-animation: falling 5s 0s infinite;
+    -webkit-animation: falling 15s 0s infinite;
 }
 
-#leaves i:nth-of-type(2n) { -webkit-animation: falling2 5s 0s infinite; }
-#leaves i:nth-of-type(3n) { -webkit-animation: falling3 5s 0s infinite; }
+#leaves i:nth-of-type(2n) { -webkit-animation: falling2 15s 0s infinite; }
+#leaves i:nth-of-type(3n) { -webkit-animation: falling3 15s 0s infinite; }
 
 #leaves i:nth-of-type(n)    { height:23px; width:30px; }
 #leaves i:nth-of-type(n):before { width:7px; height:5px; top:17px; right:1px; }
@@ -514,7 +514,7 @@ background-size: 100%;
   
   100% {
       -webkit-transform:
-          translate3d(-700px,1400px,0)
+          translate3d(-700px,900px,0)
           rotate(90deg);
       opacity: 0;
   }
@@ -529,7 +529,7 @@ background-size: 100%;
   
   100% {
       -webkit-transform:
-          translate3d(-460px,1280px,0)
+          translate3d(-460px,780px,0)
           rotate(-70deg);
       opacity: 0;
   }
@@ -544,7 +544,7 @@ background-size: 100%;
   
   100% {
       -webkit-transform:
-          translate3d(-800px,1360px,0)
+          translate3d(-800px,860px,0)
           rotate(0deg);
       opacity: 0;
   }
