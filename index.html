@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+<style>
+    html{
+      font-family: 'myFont';
+    }
+</style>
 <script src="./js/flexible.js"></script>
 </head>
 <body>
@@ -38,16 +43,16 @@
       </div>
       <div style="margin-left:1.3rem;display: flex;justify-content: center;align-items: center;gap:10px;white-space:nowrap;">
         <a href="https://www.facebook.com/profile.php?id=61564464227737">
-          <img src="./assets/images/facebook.svg" alt="content" >
+          <img src="./images/box1/facebook.png" alt="content" >
         </a>
         <a href="https://instagram.com/amatsukimahjong">
-          <img src="./assets/images/instagram.svg" alt="content">
+          <img src="./images/box1/instagram.png" alt="content">
         </a>
-        <a href="https://www.threads.net/.amatsukimahjong">
-          <img src="./assets/images/Discord.svg" alt="content">
+        <a href="https://discord.com/invite/BrckUFmzrY">
+          <img src="./images/box1/Discord.png" alt="content">
         </a>
         <a href="https://x.com/AmatsukiMa55192">
-          <img src="./assets/images/Twitter.svg" alt="content">
+          <img src="./images/box1/Twitter.png" alt="content">
         </a>
       </div>
       <div></div>
@@ -66,7 +71,7 @@
           <a href="https://instagram.com/amatsukimahjong">
             <img src="./assets/images/instagram_phone.svg" alt="content">
           </a>
-          <a href="https://www.threads.net/@amatsukimahjong">
+          <a href="https://discord.com/invite/BrckUFmzrY">
             <img src="./assets/images/Discord_phone.svg" alt="content">
           </a>
           <a href="https://x.com/AmatsukiMa55192">
@@ -180,6 +185,10 @@
     var swiper1 = new Swiper(".mySwiper1", {
       speed:1000,
       slidesPerView: 1.5,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
       spaceBetween: -30,
       centeredSlides: true,
     });
