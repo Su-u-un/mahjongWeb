@@ -437,7 +437,7 @@ background-size: 100%;
 }
 /* leaf animations */
 
-#leaves {position:absolute;z-index: 999;;top:0;width:100%;text-align: left;}
+#leaves {position:absolute;z-index: 400;top:0;width:100%;text-align: left;}
 
 #leaves i {
     display: inline-block;
