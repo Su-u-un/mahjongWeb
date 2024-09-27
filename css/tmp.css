@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'font1';
+  src: url('../assets/GenSenRounded-B.ttc');
+}
+
+body{
+  background: url('../images/box2/attention.png') no-repeat;
+  background-size: cover;
+  color: black;
+  padding: 0 20rem;
+  font-family: 'font1';
+}
