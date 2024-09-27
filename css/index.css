@@ -435,6 +435,15 @@ background-size: 100%;
   background: url(../images/box2/official.png) no-repeat;
   background-size: 100%;
 }
+.link_btn a{
+  display: block;
+}
+
+.link_btn img:hover{
+  border-radius: 1rem;
+  box-shadow: #5fffff 0px 0px 10px;
+}
+
 /* leaf animations */
 
 #leaves {position:absolute;z-index: 400;top:-1rem;width:100%;text-align: left;}
@@ -447,7 +456,6 @@ background-size: 100%;
     transform: skew(20deg);
     border-radius: 5% 40% 70%;
     box-shadow: inset 0px 0px 1px #222;
-    border: 1px solid #333;
     z-index: 1;
     -webkit-animation: falling 5s 0s infinite;
 }
@@ -498,46 +506,46 @@ background-size: 100%;
 
 @-webkit-keyframes falling {
     
-    0% {
-        -webkit-transform:
-            translate3d(300,0,0)
-            rotate(0deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-0.6rem,5.2rem,0)
-            rotate(90deg);
-        opacity: 0;
-    }
+  0% {
+      -webkit-transform:
+          translate3d(300,0,0)
+          rotate(0deg);
+  }
+  
+  100% {
+      -webkit-transform:
+          translate3d(-700px,1400px,0)
+          rotate(90deg);
+      opacity: 0;
+  }
 }
 
 @-webkit-keyframes falling3 {
-     0% {
-        -webkit-transform:
-            translate3d(0,0,0)
-            rotate(-20deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-0.4rem,5.1rem,0)
-            rotate(-70deg);
-        opacity: 0;
-    }
+   0% {
+      -webkit-transform:
+          translate3d(0,0,0)
+          rotate(-20deg);
+  }
+  
+  100% {
+      -webkit-transform:
+          translate3d(-460px,1280px,0)
+          rotate(-70deg);
+      opacity: 0;
+  }
 }
 
 @-webkit-keyframes falling2 {
-     0% {
-        -webkit-transform:
-            translate3d(0,0,0)
-            rotate(90deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-1rem,5rem,0)
-            rotate(0deg);
-        opacity: 0;
-    }
+   0% {
+      -webkit-transform:
+          translate3d(0,0,0)
+          rotate(90deg);
+  }
+  
+  100% {
+      -webkit-transform:
+          translate3d(-800px,1360px,0)
+          rotate(0deg);
+      opacity: 0;
+  }
 }
