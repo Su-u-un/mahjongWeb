@@ -267,7 +267,7 @@ background-size: 100%;
   top: 4.8rem;
   height: 3.9rem;
   width: 7rem;
-  background: url(../images/content/register.png) no-repeat ;
+  background: url(../images/content/register.svg) no-repeat ;
   background-size: 100%;
 }
 
@@ -319,7 +319,7 @@ background-size: 100%;
   width: 1rem;
   height: 1rem;
   z-index:10;
-  background: url(../images/role/l.png) no-repeat ;
+  background: url(../images/role/l.svg) no-repeat ;
   background-size: 100%;
 }
 
@@ -330,7 +330,7 @@ background-size: 100%;
   width: 1rem;
   height: 1rem;
   z-index:10;
-  background: url(../images/role/r.png) no-repeat ;
+  background: url(../images/role/r.svg) no-repeat ;
   background-size: 100%;
 }
 
@@ -341,7 +341,7 @@ background-size: 100%;
   width: 1rem;
   height: 1rem;
   z-index:10;
-  background: url(../images/role/l.png) no-repeat ;
+  background: url(../images/role/l.svg) no-repeat ;
   background-size: 100%;
 }
 
@@ -352,7 +352,7 @@ background-size: 100%;
   width: 1rem;
   height: 1rem;
   z-index:10;
-  background: url(../images/role/r.png) no-repeat ;
+  background: url(../images/role/r.svg) no-repeat ;
   background-size: 100%;
 }
 
@@ -432,7 +432,7 @@ background-size: 100%;
   right:3.5rem;
   height: 0.85rem;
   width: 2.9rem;
-  background: url(../images/box2/official.png) no-repeat;
+  background: url(../images/box2/official.svg) no-repeat;
   background-size: 100%;
   cursor: pointer;
 }
