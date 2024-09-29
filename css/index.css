@@ -95,6 +95,9 @@
     text-align: center;
     text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
   }
+  .bg2 p {
+    margin-bottom: 0.05rem;
+  }
   .content .text{
     position: absolute;
     top: 1.35rem;
@@ -356,6 +359,10 @@ background-size: 100%;
   background-size: 100%;
 }
 
+.left_1 , .right_1 , .left_2 , .right_2:hover{
+  cursor: pointer;
+}
+
 .role {
   position: relative;
   width: 100%;
@@ -392,7 +399,7 @@ background-size: 100%;
   gap:0.5rem;
 }
 .role .avatar img{
-  z-index:10;
+  z-index:100;
   width:1.5rem;
 }
 
@@ -440,6 +447,8 @@ background-size: 100%;
 }
 
 .link_btn img:hover{
+  width: 0.4rem;
+  height:0.4rem;
   border-radius: 1rem;
   box-shadow: #5fffff 0px 0px 10px;
 }
