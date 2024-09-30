@@ -50,10 +50,10 @@
     font-weight: 600;
     color: #537fb6;
     text-align: center;
-    text-shadow: white 0 0 20px, white 0 0 20px, white 0 0 20px;
+    text-shadow: white 0 0 10px, white 0 0 10px, white 0 0 10px;
   }
   .bg2 p {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.07rem;
   }
 }
 
@@ -205,6 +205,13 @@ body{
   background-size: 100%;
   cursor: pointer;
 }
+.bg1 .btn:hover{
+  position: absolute;
+  bottom: 1rem;
+  left:1.2rem;
+  height: 1.4rem;
+  width: 3.6rem;
+}
 .bg1 .text{
   position: absolute;
   bottom:0;
@@ -271,6 +278,24 @@ background-size: 100%;
   width: 7rem;
   background: url(../images/content/register.png) no-repeat ;
   background-size: 100%;
+}
+
+.content .register_btn{
+  position: absolute;
+  left:5rem;
+  top: 7.5rem;
+  height: 0.6rem;
+  width: 2rem;
+  background: url(../images/content/register_btn.png) no-repeat ;
+  background-size: 100%;
+}
+
+.content .register_btn:hover{
+  position: absolute;
+  left:4.8rem;
+  top: 7.4rem;
+  height: 0.8rem;
+  width: 2.5rem;
 }
 
 .content .line3 {
@@ -421,6 +446,14 @@ background-size: 100%;
   cursor: pointer;
 }
 
+.bg2 .private:hover{
+  position: absolute;
+  bottom: 1.95rem;
+  left:1.4rem;
+  height: 0.9rem;
+  width: 3.1rem;
+}
+
 .bg2 .service{
   position: absolute;
   bottom: 2rem;
@@ -430,6 +463,14 @@ background-size: 100%;
   background: url(../images/box2/service.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
+}
+
+.bg2 .service:hover{
+  position: absolute;
+  bottom: 1.95rem;
+  right:1.4rem;
+  height: 0.9rem;
+  width: 3.1rem;
 }
 
 .bg2 .offical {
