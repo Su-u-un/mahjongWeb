@@ -2,6 +2,7 @@
   .header_web{
     display: none;
   }
+  #leaves {display: none;}
   .header_phone{
     display: flex;
     justify-content: space-between;
@@ -60,7 +61,7 @@
   .header_phone {
     display: none;
   }
-
+  #leaves {position:absolute;z-index: 400;top:-0rem;width:100%;text-align: left;}
   .header_web {
     position:fixed;
     top:0;
@@ -181,8 +182,6 @@ body{
   .header_phone .btn{
     margin-right: 1rem;
     background-color: white;
-    border-radius: 0.2rem;
-    box-shadow: #5fffff 0 0.01rem 0.03rem;
     height:1rem;
   }
   #menu a img{
@@ -455,7 +454,6 @@ background-size: 100%;
 
 /* leaf animations */
 
-#leaves {position:absolute;z-index: 400;top:-0rem;width:100%;text-align: left;}
 
 #leaves i {
     display: inline-block;
