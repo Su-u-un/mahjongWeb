@@ -332,6 +332,8 @@
   var menu = document.querySelector('#menu');
   var main = document.getElementsByTagName('body')[0];
   var tmp = document.getElementById('tmp');
+  var container = document.getElementsByClassName('container')[0]
+  container.display = 'none'
   tmp.style.display = 'none';
   var header_phone = document.getElementsByClassName("header_phone")[0]
   var phone_video = document.getElementById('phone_video');
@@ -752,6 +754,7 @@
   const loadingInterval = setInterval(() => {
     // 为页面添加禁止滚动
     main.style.overflowY = 'hidden';
+    container.style.display = 'none'
     if (progress < 100) {
       const randomIncrement = Math.floor(Math.random() * 10) + 1; // 随机增加1到5
       progress = Math.min(progress + randomIncrement, 100);
@@ -762,6 +765,7 @@
       loadingText.textContent = 'Completed!';
       setTimeout(() => {
         loadingContainer.style.display = 'none'; // 关闭加载弹窗
+        container.style.display = 'block'
         if(document.documentElement.clientWidth < 478){
           header_phone.style.display = 'flex'
         }else{
