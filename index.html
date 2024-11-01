@@ -867,35 +867,35 @@
       err.style.display = 'flex'
       return;
     }
-    else if (!input.value) {
+    else if (!input.innerText) {
       //弹出手机号为空
       err.getElementsByClassName('p1')[0].innerHTML = '輸入內容不可為空!'
       err.style.display = 'flex'
       return;
     }
     else if (selectedRegion === "886") {
-      if (!phoneRegex.TW.test(input.value)) {
+      if (!phoneRegex.TW.test(input.innerText)) {
         err.getElementsByClassName('p1')[0].innerHTML = '輸入內容格式錯誤!'
         err.style.display = 'flex'
         return;
       }
     }
     if (selectedRegion === "852") {
-      if (!phoneRegex.HK.test(input.value)) {
+      if (!phoneRegex.HK.test(input.innerText)) {
         err.getElementsByClassName('p1')[0].innerHTML = '輸入內容格式錯誤!'
         err.style.display = 'flex'
         return;
       }
     }
     if (selectedRegion === "853") {
-      if (!phoneRegex.MO.test(input.value)) {
+      if (!phoneRegex.MO.test(input.innerText)) {
         err.getElementsByClassName('p1')[0].innerHTML = '輸入內容格式錯誤!'
         err.style.display = 'flex'
         return;
       }
     }
     if (selectedRegion === "81") {
-      if (!phoneRegex.JP.test(input.value)) {
+      if (!phoneRegex.JP.test(input.innerText)) {
         err.getElementsByClassName('p1')[0].innerHTML = '輸入內容格式錯誤!'
         err.style.display = 'flex'
         return;
@@ -908,7 +908,7 @@
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify({ region: selectedRegion, phone: input.value })
+      body: JSON.stringify({ region: selectedRegion, phone: input.innerText })
     })
       .then(response => response.json())
       .then(data => {
