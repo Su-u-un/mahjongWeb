@@ -5,6 +5,7 @@
     margin-left:0.1rem;
     align-content: center;
     max-height: 0.45rem;
+    min-height: 0.45rem;
   }
   #editable{
     outline: none;
@@ -733,6 +734,7 @@
     margin-left:0.1rem;
     align-content: center;
     max-height: 0.3rem;
+    min-height: 0.3rem;
   }
   #editable{
     outline: none;
