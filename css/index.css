@@ -436,6 +436,9 @@
   }
   
   input[type="checkbox"]:after{
+    position: absolute;
+    top:0;
+    left:0.03rem;
     content:"\2714";
     font-weight: 600;
     font-size: 0.3rem;
@@ -1185,6 +1188,9 @@
   }
   
   input[type="checkbox"]:after{
+    position: absolute;
+    top:0;
+    left:0.03rem;
     content:"\2714";
     font-weight: 600;
     font-size: 0.1rem;
