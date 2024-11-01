@@ -362,7 +362,7 @@
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
-  input[type="checkbox"]{
+  /* input[type="checkbox"]{
     border:0.05rem solid #000;
     background-color:transparent;
     color:transparent;
@@ -372,7 +372,7 @@
     -moz-appearance:none;
     -ms-appearance:none;
     -o-appearance:none;
-  }
+  } */
   #appstore{
     position: absolute;
     display: block;
@@ -437,14 +437,14 @@
     width: 1.9rem;
   }
   
-  input[type="checkbox"]:after{
+  /* input[type="checkbox"]:after{
     position: absolute;
     top:0;
     left:0.03rem;
     content:"\2714";
     font-weight: 600;
     font-size: 0.3rem;
-  }
+  } */
   .content .login_btn{
     cursor: pointer;
     position: absolute;
@@ -1116,7 +1116,7 @@
   height: 0.7rem;
   width: 1.6rem;
 }
-  input[type="checkbox"]{
+  /* input[type="checkbox"]{
     border:0.03rem solid #000;
     background-color:transparent;
     color:transparent;
@@ -1126,7 +1126,7 @@
     -moz-appearance:none;
     -ms-appearance:none;
     -o-appearance:none;
-  }
+  } */
   #appstore{
     position: absolute;
     display: block;
@@ -1191,14 +1191,14 @@
     width: 1.05rem;
   }
   
-  input[type="checkbox"]:after{
+  /* input[type="checkbox"]:after{
     position: absolute;
     top:0;
     left:0.03rem;
     content:"\2714";
     font-weight: 600;
     font-size: 0.1rem;
-  }
+  } */
   .content .login_btn{
     cursor: pointer;
     position: absolute;
@@ -1693,9 +1693,9 @@ input::-webkit-input-placeholder {
 }
 
 
-input[type="checkbox"]:checked{
+/* input[type="checkbox"]:checked{
   color:#000;
-}
+} */
 
 
 #banner_pc {
