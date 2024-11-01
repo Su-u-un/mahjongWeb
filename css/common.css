@@ -40,15 +40,13 @@ input {
    
 }
 body{
-    overflow-x: hidden;
-    width: 10rem;
+    width: 100%;
   }
   #app{
-    overflow-x: hidden;
-    width: 10rem;
+    width: 100%;
   }
   .w{
-    width: 10rem;
+    width: 100%;
     margin: 0 auto;
    }
    *{
