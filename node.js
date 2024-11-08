@@ -4,15 +4,16 @@ const fs = require('fs');
 const https = require('https');
 const app = express();
 const mysql = require('mysql');
+const config = require('../config.json');
 
 app.use(cors());
 app.use(express.json());
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root123',
-    database: 'mahjong'
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.database
   });
 app.use(express.static('./'));
 
