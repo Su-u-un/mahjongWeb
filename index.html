@@ -203,9 +203,9 @@
           <div class="p1">感謝您的參與, 敬請期待 《天月麻雀》 正式上市!</div>
           <div id="confirm"></div>
           <div class="p2">立即到以下商店進行預約</div>
-          <a id="confirmAppstore" href="#"></a>
-          <a id="confirmGoogle" href="https://bit.ly/AmatsukiMjGooglePlay"></a>
-          <a id="confirmSteam" href="https://bit.ly/Amatsukimjdc"></a>
+          <a id="confirmAppstore" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
+          <a id="confirmGoogle" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
+          <a id="confirmSteam" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=fullicon2"></a>
         </div>
         <div id="err">
           <div class="p1">感謝您的參與, 敬請期待 《天月麻雀》 正式上市!</div>
@@ -857,10 +857,10 @@
   }
 
   const phoneRegex = {
-    TW: /^[0-9]{9}$/,
+    TW: /^[0-9]{9,10}$/,
     HK: /^[0-9]{8}$/,
     MO: /^[0-9]{8}$/,
-    JP: /^[0-9]{10}$/,
+    JP: /^[0-9]{10,11}$/,
     KR: /^[0-9]{10,11}$/,
     VN: /^(\+84|0[1-9])[0-9]{8,10}$/,
     KH: /^(\+855|0[1-9])[0-9]{8,9}$/,
@@ -930,6 +930,8 @@
         console.log(data)
         if (data.code === 200) {
           tip.style.display = 'block'
+          // 成功登記後，出示感謝參與頁面時，網址會有所不同
+          history.replaceState(null,"","/#complete")
         } else if (data.code === 400) {
           err.getElementsByClassName('p1')[0].innerHTML = '本號碼已預約!'
           err.style.display = 'flex'
@@ -999,7 +1001,7 @@
     if(smsRect.bottom >= 0){
       banner_android.style.display = 'none'
     } else {
-      banner_android.style.display = 'block'
+      banner_android.style.display = 'none'
     }
   } else {
     const pcRect = one.getBoundingClientRect();

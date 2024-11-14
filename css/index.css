@@ -175,7 +175,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:2.4rem;
+    left:1.3rem;
     top: 4rem;
     height: 0.7rem;
     width: 2.1rem;
@@ -195,7 +195,7 @@
   } */
   #confirmGoogle{
     position: absolute;
-    display: block;
+    display: none;
     left:0.3rem;
     top: 4rem;
     height: 0.7rem;
@@ -217,7 +217,7 @@
   #confirmSteam{
     position: absolute;
     display: block;
-    left:4.57rem;
+    right:1.3rem;
     top: 4rem;
     height: 0.7rem;
     width: 2.1rem;
@@ -358,7 +358,7 @@
     top: 3.05rem;
     height: 1rem;
     width: 2.5rem;
-    background: url(../images/content/confirm_btn.png) no-repeat ;
+    background: url(../images/content/back.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -376,7 +376,7 @@
   #appstore{
     position: absolute;
     display: block;
-    left:3.9rem;
+    left:2.1rem;
     top: 5.6rem;
     height: 0.6rem;
     width: 1.8rem;
@@ -385,7 +385,7 @@
     transition: all 0.4s ease-in-out;
   }
   
-  #appstore:hover{
+  /* #appstore:hover{
     cursor: pointer;
     position: absolute;
     display: block;
@@ -393,10 +393,10 @@
     top: 5.58rem;
     height: 0.7rem;
     width: 1.9rem;
-  }
+  } */
   #google{
     position: absolute;
-    display: block;
+    display: none;
     left:2.1rem;
     top: 5.6rem;
     height: 0.6rem;
@@ -406,7 +406,7 @@
     transition: all 0.4s ease-in-out;
   }
   
-  #google:hover{
+  /* #google:hover{
     cursor: pointer;
     position: absolute;
     display: block;
@@ -414,11 +414,11 @@
     top: 5.58rem;
     height: 0.7rem;
     width: 1.9rem;
-  }
+  } */
   #steam{
     position: absolute;
     display: block;
-    left:5.7rem;
+    left:3.9rem;
     top: 5.6rem;
     height: 0.6rem;
     width: 1.8rem;
@@ -427,7 +427,7 @@
     transition: all 0.4s ease-in-out;
   }
   
-  #steam:hover{
+  /* #steam:hover{
     cursor: pointer;
     position: absolute;
     display: block;
@@ -435,7 +435,7 @@
     top: 5.58rem;
     height: 0.7rem;
     width: 1.9rem;
-  }
+  } */
   
   /* input[type="checkbox"]:after{
     position: absolute;
@@ -913,7 +913,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:1.4rem;
+    left:0.85rem;
     top: 2.3rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -926,14 +926,14 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:1.38rem;
+    left:0.8rem;
     top: 2.29rem;
     height: 0.5rem;
     width: 1.15rem;
   }
   #confirmGoogle{
     position: absolute;
-    display: block;
+    display: none;
     left:0.25rem;
     top: 2.3rem;
     height: 0.35rem;
@@ -946,7 +946,7 @@
   #confirmGoogle:hover{
     cursor: pointer;
     position: absolute;
-    display: block;
+    display: none;
     left:0.24rem;
     top: 2.29rem;
     height: 0.5rem;
@@ -955,7 +955,7 @@
   #confirmSteam{
     position: absolute;
     display: block;
-    left:2.57rem;
+    right:0.85rem;
     top: 2.3rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -968,7 +968,7 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:2.55rem;
+    right:0.8rem;
     top: 2.29rem;
     height: 0.5rem;
     width: 1.15rem;
@@ -1102,7 +1102,7 @@
   top: 2.05rem;
   height: 0.6rem;
   width: 1.5rem;
-  background: url(../images/content/confirm_btn.png) no-repeat ;
+  background: url(../images/content/back.png) no-repeat ;
   background-size: 100%;
   transition: all 0.4s ease-in-out;
 }
@@ -1130,7 +1130,7 @@
   #appstore{
     position: absolute;
     display: block;
-    left:3.05rem;
+    left:2.05rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
@@ -1143,14 +1143,14 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:3rem;
+    left:2rem;
     top: 2.88rem;
     height: 0.4rem;
     width: 1.05rem;
   }
   #google{
     position: absolute;
-    display: block;
+    display: none;
     left:2.05rem;
     top: 2.9rem;
     height: 0.3rem;
@@ -1163,7 +1163,7 @@
   #google:hover{
     cursor: pointer;
     position: absolute;
-    display: block;
+    display: none;
     left:2rem;
     top: 2.88rem;
     height: 0.4rem;
@@ -1172,7 +1172,7 @@
   #steam{
     position: absolute;
     display: block;
-    left:4.05rem;
+    left:3.05rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
@@ -1185,7 +1185,7 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:4rem;
+    left:3rem;
     top: 2.88rem;
     height: 0.4rem;
     width: 1.05rem;
