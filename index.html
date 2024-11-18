@@ -95,7 +95,7 @@
         </a>
       </div>
       <div class="link_btn"
-        style="margin-left:1.3rem;display: flex;justify-content: center;align-items: center;gap:0.05rem;white-space:nowrap;">
+        style="margin-left:1rem;display: flex;justify-content: center;align-items: center;gap:0.05rem;white-space:nowrap;">
         <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank">
           <img src="./images/box1/Facebook.png" alt="content">
         </a>
@@ -109,6 +109,10 @@
           <img src="./images/box1/twitter.png" alt="content">
         </a>
       </div>
+      <div id="language-select-div">
+        <div id="language-select" value="index.html"><span>繁體中文</span> <div>▼</div></div>
+        <div id="language-list"></div>
+      </div>
     </div>
 
   </div>
@@ -120,7 +124,7 @@
   </div>
   <div id="menu"
     style="display:none;z-index:500;position:fixed;top:0;left:0;height: 100%;width: 100%; background-color: rgba(255, 255, 255, 0.99); opacity: 0.99;">
-    <div style="display: flex;justify-content: center;align-items: center; gap: 0.6rem; margin:3.5rem 0;">
+    <div style="display: flex;justify-content: center;align-items: center; gap: 0.6rem; margin-top:3.5rem;">
       <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank">
         <img src="./assets/images/facebook_phone.svg" alt="content">
       </a>
@@ -133,6 +137,10 @@
       <a href="https://x.com/AmatsukiMahjong" target="_blank">
         <img src="./assets/images/Twitter_phone.svg" alt="content">
       </a>
+    </div>
+    <div id="language-select-div-phone">
+      <div id="language-select-phone" value="index.html"><span>繁体中文</span> <div>▼</div></div>
+      <div id="language-list-phone"></div>
     </div>
     <div
       style="font-weight:600; display: flex;flex-direction: column;gap:1rem;justify-content: center;align-items: center;">
@@ -304,6 +312,71 @@
 
 </body>
 <script>
+  const languages = [
+    {name:'繁體中文',link:'index.html'},
+    {name:'日本語',link:'index-jp.html'}
+  ];
+
+  const language_select_phone = document.getElementById('language-select-phone');
+  const language_list_phone = document.getElementById('language-list-phone');
+
+  language_select_phone.addEventListener('click', () => {
+    language_list_phone.style.display = language_list_phone.style.display === 'block' ? 'none' : 'block';
+    populateLanguageListPhone();
+  });
+
+  function populateLanguageListPhone() {
+    language_list_phone.innerHTML = '';
+    languages.forEach(language => {
+      const item = document.createElement('div');
+      item.className = 'language-item';
+      item.textContent = `${language.name}`;
+      item.addEventListener('click', () => {
+        language_select_phone.innerHTML = `<span>${language.name}</span>     <div>▼</div>`;
+        language_select_phone.setAttribute('value', language.link);
+        window.location.href = language.link;
+        language_list_phone.style.display = 'none';
+      });
+      language_list_phone.appendChild(item);
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!language_select_phone.contains(event.target) && !language_list_phone.contains(event.target)) {
+      language_list_phone.style.display = 'none';
+    }
+  });
+
+  const language_select = document.getElementById('language-select');
+  const language_list = document.getElementById('language-list');
+
+  language_select.addEventListener('click', () => {
+    language_list.style.display = language_list.style.display === 'block' ? 'none' : 'block';
+    populateLanguageList();
+  });
+
+  function populateLanguageList() {
+    language_list.innerHTML = '';
+    languages.forEach(language => {
+      const item = document.createElement('div');
+      item.className = 'language-item';
+      item.textContent = `${language.name}`;
+      item.addEventListener('click', () => {
+        language_select.innerHTML = `<span>${language.name}</span>     <div>▼</div>`;
+        language_select.setAttribute('value', language.link);
+        window.location.href = language.link;
+        language_list.style.display = 'none';
+      });
+      language_list.appendChild(item);
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!language_select.contains(event.target) && !language_list.contains(event.target)) {
+      language_list.style.display = 'none';
+    }
+  });
+
   const countries = [
     { name: '香港', code: '+852', region: '852' },
     { name: '澳門', code: '+853', region: '853' },

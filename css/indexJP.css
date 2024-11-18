@@ -1,7 +1,48 @@
 @media (max-width:478px) {
+  #language-select-div-phone{
+    /* margin-left: 0.3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    color:#537fb6;
+    height: 1rem;
+  }
+  #language-select-phone{
+    position: absolute;
+    user-select:none;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:3rem;
+    text-align: center;
+    padding:0.05rem;
+    border:#537fb6 solid;
+  }
+  #language-list-phone{
+    text-align: center;
+    display: none;
+    position: relative;
+    z-index: 10;
+    user-select:none;
+    padding:0 0.05rem;
+    top:0.9rem;
+    border:#537fb6 0.1rem solid;
+    background-color: white;
+    width: 3rem;
+  }
+  .language-item{
+    padding-top:0.1rem;
+  }
+  .input-content{
+    display: flex;
+    flex-direction: row;
+    margin-top:0.3rem;
+  }
   #editWrap{
     border: 0.05rem solid black;
-    min-width:3.7rem;
+    min-width:3.6rem;
     margin-left:0.1rem;
     align-content: center;
     max-height: 0.45rem;
@@ -16,8 +57,8 @@
     color: #a6a6a4; 
     position: absolute; 
     pointer-events: none;
-    font-size:0.12rem;
-    top:0.02rem;
+    font-size:0.2rem;
+    top:0.08rem;
     left:0.05rem;
   }
   .content .swiper-slide {
@@ -50,7 +91,7 @@
     width: 10rem;
     height: 3rem;
     z-index:10;
-    background: url(../images/content/linephone1.png) no-repeat ;
+    background: url(../imageJP/linephone1.png) no-repeat ;
     background-size: 100%;
   }
   
@@ -61,7 +102,7 @@
   width: 10rem;
   height: 3rem;
   z-index:10;
-  background: url(../images/content/linephone4.png) no-repeat ;
+  background: url(../imageJP/linephone4.png) no-repeat ;
   background-size: 100%;
   }
   .line5 {
@@ -71,7 +112,7 @@
   width: 10rem;
   height: 3rem;
   z-index:10;
-  background: url(../images/content/linephone5.png) no-repeat ;
+  background: url(../imageJP/linephone5.png) no-repeat ;
   background-size: 100%;
   }
   .content .line2 {
@@ -79,7 +120,7 @@
     top: 5rem;
     height: 3rem;
     width: 100%;
-    background: url(../images/content/linephone2.png) no-repeat ;
+    background: url(../imageJP/linephone2.png) no-repeat ;
     background-size: 100%;
   }
   .bg2 .private{
@@ -179,8 +220,8 @@
     left:1.3rem;
     top: 4rem;
     height: 0.7rem;
-    width: 2.1rem;
-    background: url(../images/content/Appstore.png) no-repeat ;
+    width: 1.7rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -321,7 +362,7 @@
     top: 21.6rem;
     height: 3rem;
     width: 100%;
-    background: url(../images/content/linephone3.png) no-repeat ;
+    background: url(../imageJP/linephone3.png) no-repeat ;
     background-size: 100%;
   }
   
@@ -349,7 +390,8 @@
   
   #err .p1{
     font-size: 0.3rem;
-    padding-top: 1rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
   }
   #confirm2{
     cursor: pointer;
@@ -359,7 +401,7 @@
     top: 3.05rem;
     height: 1rem;
     width: 2.5rem;
-    background: url(../images/content/back.png) no-repeat ;
+    background: url(../imageJP/back.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -377,11 +419,11 @@
   #appstore{
     position: absolute;
     display: block;
-    left:2.1rem;
-    top: 5.6rem;
+    left:2.5rem;
+    top: 5.5rem;
     height: 0.6rem;
-    width: 1.8rem;
-    background: url(../images/content/Appstore.png) no-repeat ;
+    width: 1.6rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -419,8 +461,8 @@
   #steam{
     position: absolute;
     display: block;
-    left:3.9rem;
-    top: 5.6rem;
+    left:4.4rem;
+    top: 5.5rem;
     height: 0.6rem;
     width: 1.8rem;
     background: url(../images/content/Steam.png) no-repeat ;
@@ -451,7 +493,7 @@
     position: absolute;
     display: block;
     left:3.5rem;
-    top: 4rem;
+    top: 3.75rem;
     height: 1rem;
     width: 3rem;
     background: url(../imageJP/login.png) no-repeat ;
@@ -463,7 +505,7 @@
     position: absolute;
     display: block;
     left:3.4rem;
-    top: 3.9rem;
+    top: 3.8rem;
     height: 1.2rem;
     width: 3.2rem;
   }
@@ -492,26 +534,26 @@
   .content .step1{
     position: absolute;
     display: block;
-    font-size: 0.3rem;
-    left:2.15rem;
-    top: 0.8rem;
-    width: 5.6rem;
+    font-size: 0.25rem;
+    left:2.45rem;
+    top: 1.2rem;
+    width: 6.35rem;
   }
   .content .step2{
     position: absolute;
     display: block;
-    font-size: 0.3rem;
-    left:2.15rem;
-    top: 5rem;
-    width: 3.6rem;
+    font-size: 0.25rem;
+    left:2.45rem;
+    top: 4.95rem;
+    width: 5.6rem;
   }
   .content .phone_content{
     position: absolute;
     display: block;
-    font-size: 0.3rem;
-    left:2.15rem;
-    top: 1.5rem;
-    width: 3.6rem;
+    font-size: 0.25rem;
+    left:2.45rem;
+    top: 1.9rem;
+    width: 5rem;
   }
   #country-select{
     user-select:none;
@@ -562,19 +604,28 @@
   
   #description{
     position: absolute;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
     left:3rem;
-    top: 3.25rem;
+    top: 3.3rem;
   }
   .content .line2_5{
     position: absolute;
     top: 14rem;
     height: 3rem;
     width: 100%;
-    background: url(../images/content/linephone22.png) no-repeat ;
+    background: url(../imageJP/linephone22.png) no-repeat ;
     background-size: 100%;
   }
-  
+  #all_icon{
+    position: absolute;
+    top: 15.5rem;
+    left:1.3rem;
+    background: url(../imageJP/all_icon.png) no-repeat ;
+    background-size: 100%;
+    width:7.4rem;
+    height:7.4rem;
+  }
+
   #a{
     position: absolute;
     top: 16rem;
@@ -632,10 +683,11 @@
     /* top: 7.8rem; */
     height: 7rem;
     width: 10rem;
-    background: url(../images/content/register_phone.svg) no-repeat ;
+    background: url(../imageJP/register_phone.png) no-repeat ;
     background-size: 100%;
   }
   .role .swiper-slide img{
+    user-select:none;
     display: block;
     width: 10rem;
     object-fit: cover;
@@ -729,6 +781,44 @@
 }
 
 @media (min-width:478px) {
+  #language-select-div{
+    margin-left: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.15rem;
+    color:#537fb6;
+  }
+  #language-select{
+    position: absolute;
+    user-select:none;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:0.8rem;
+    padding:0.05rem;
+    /* border:black 0.03rem solid; */
+  }
+  #language-list{
+    display: none;
+    position: relative;
+    z-index: 10;
+    user-select:none;
+    padding:0 0.05rem;
+    top:0.4rem;
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    background-color: white;
+  }
+  .language-item{
+    width:0.8rem;
+    padding-top:0.1rem;
+  }
+  .input-content{
+    display: flex;
+    flex-direction: row;
+    margin-top:0.1rem;
+  }
   #editWrap{
     border: 0.03rem solid black;
     min-width:2.1rem;
@@ -768,6 +858,7 @@
   }
   
   .content .swiper-slide img{
+    user-select:none;
     display: block;
     width: 6rem;
     object-fit: cover;
@@ -797,12 +888,12 @@
   }
   .line5 {
   position: absolute;
-  top: -0.5rem;
+  top: -0.6rem;
   left: 0;
   width: 10rem;
   height: 2rem;
   z-index:10;
-  background: url(../imageS/content/line5.png) no-repeat ;
+  background: url(../imageJP/line5.png) no-repeat ;
   background-size: 100%;
   }
   .content .line2 {
@@ -918,8 +1009,8 @@
     left:0.85rem;
     top: 2.3rem;
     height: 0.35rem;
-    width: 1.1rem;
-    background: url(../images/content/Appstore.png) no-repeat ;
+    width: 0.9rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -931,7 +1022,7 @@
     left:0.8rem;
     top: 2.29rem;
     height: 0.5rem;
-    width: 1.15rem;
+    width: 1rem;
   }
   #confirmGoogle{
     position: absolute;
@@ -1093,8 +1184,9 @@
 }
 
 #err .p1{
-  font-size: 0.17rem;
-  padding-top: 1rem;
+  font-size: 0.2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
 }
 #confirm2{
   cursor: pointer;
@@ -1104,7 +1196,7 @@
   top: 2.05rem;
   height: 0.6rem;
   width: 1.5rem;
-  background: url(../images/content/back.png) no-repeat ;
+  background: url(../imageJP/back.png) no-repeat ;
   background-size: 100%;
   transition: all 0.4s ease-in-out;
 }
@@ -1135,8 +1227,8 @@
     left:2.05rem;
     top: 2.9rem;
     height: 0.3rem;
-    width: 0.95rem;
-    background: url(../images/content/Appstore.png) no-repeat ;
+    width: 0.8rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -1206,8 +1298,8 @@
     position: absolute;
     display: block;
     left:2.79rem;
-    top: 1.95rem;
-    height: 0.6rem;
+    top: 2rem;
+    height: 0.5rem;
     width: 1.5rem;
     background: url(../imageJP/login.png) no-repeat ;
     background-size: 100%;
@@ -1218,8 +1310,8 @@
     position: absolute;
     display: block;
     left:2.67rem;
-    top: 1.9rem;
-    height: 0.8rem;
+    top: 1.95rem;
+    height: 0.7rem;
     width: 1.8rem;
   }
   
@@ -1265,7 +1357,7 @@
     display: block;
     font-size: 0.17rem;
     left:2rem;
-    top: 0.8rem;
+    top: 0.9rem;
     width: 3.6rem;
   }
   #country-select{
@@ -1316,8 +1408,8 @@
   }
   #country-checkbox{
     position: absolute;
-    left:2.21rem;
-    top: 1.6rem;
+    left:2rem;
+    top: 1.7rem;
     width:0.2rem;
     height:0.2rem;
   }
@@ -1325,8 +1417,8 @@
   #description{
     position: absolute;
     font-size: 0.15rem;
-    left:2.45rem;
-    top: 1.63rem;
+    left:2.25rem;
+    top: 1.73rem;
   }
   .content .line2_5{
     position: absolute;
@@ -1336,7 +1428,16 @@
     background: url(../images/content/line22.png) no-repeat ;
     background-size: 100%;
   }
-  
+
+  #all_icon{
+    position: absolute;
+    top: 11.5rem;
+    left:2rem;
+    background: url(../imageJP/all_icon.png) no-repeat ;
+    background-size: 100%;
+    width:6rem;
+    height:5.5rem;
+  }
   #a{
     position: absolute;
     top: 12.5rem;
@@ -1601,21 +1702,21 @@ body{
 }
 .bg_phone .btn{
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
   left:2rem;
-  height: 2.1rem;
+  height: 3rem;
   width: 6.5rem;
-  background: url(../images/box1/home_btn.png) no-repeat;
+  background: url(../imageJP/home_btn.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
 }
 .bg_phone .text{
 position: absolute;
-top:2rem;
-left:0rem;
-height: 9.3rem;
-width: 3.8rem;
-background: url(../images/box1/home_text.svg) no-repeat;
+top:1.5rem;
+left:.5rem;
+height: 11.5rem;
+width: 2.8rem;
+background: url(../imageJP/home_phone_text.png) no-repeat;
 background-size: 100%;
 }
 
@@ -1706,7 +1807,7 @@ input::-webkit-input-placeholder {
   z-index: 300;
   top: calc( 100vh / 3 );
   right:0;
-  background:url(../images/box1/banner_pc.png) no-repeat;
+  background:url(../imageJP/banner_pc.png) no-repeat;
   background-size: 100%;
   width:1rem;
   height:2rem;
@@ -1726,7 +1827,7 @@ input::-webkit-input-placeholder {
   position: fixed;
   z-index: 300;
   bottom:0;
-  background:url(../images/box1/Banner_AppStore.png) no-repeat;
+  background:url(../imageJP/Banner_AppStore.png) no-repeat;
   background-size: 100%;
   width:100%;
   height:1.9rem;

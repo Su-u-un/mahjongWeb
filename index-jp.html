@@ -95,7 +95,7 @@
         </a>
       </div>
       <div class="link_btn"
-        style="margin-left:1.3rem;display: flex;justify-content: center;align-items: center;gap:0.05rem;white-space:nowrap;">
+        style="margin-left:1rem;display: flex;justify-content: center;align-items: center;gap:0.05rem;white-space:nowrap;">
         <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank">
           <img src="./images/box1/Facebook.png" alt="content">
         </a>
@@ -109,6 +109,10 @@
           <img src="./images/box1/twitter.png" alt="content">
         </a>
       </div>
+      <div id="language-select-div">
+        <div id="language-select" value="index-jp.html"><span>日本語</span> <div>▼</div></div>
+        <div id="language-list"></div>
+      </div>
     </div>
 
   </div>
@@ -120,7 +124,7 @@
   </div>
   <div id="menu"
     style="display:none;z-index:500;position:fixed;top:0;left:0;height: 100%;width: 100%; background-color: rgba(255, 255, 255, 0.99); opacity: 0.99;">
-    <div style="display: flex;justify-content: center;align-items: center; gap: 0.6rem; margin:3.5rem 0;">
+    <div style="display: flex;justify-content: center;align-items: center; gap: 0.6rem; margin-top:3.5rem;">
       <a href="https://www.facebook.com/profile.php?id=61564464227737" target="_blank">
         <img src="./assets/images/facebook_phone.svg" alt="content">
       </a>
@@ -133,6 +137,10 @@
       <a href="https://x.com/AmatsukiMahjong" target="_blank">
         <img src="./assets/images/Twitter_phone.svg" alt="content">
       </a>
+    </div>
+    <div id="language-select-div-phone">
+      <div id="language-select-phone" value="index-jp.html"><span>日本語</span> <div>▼</div></div>
+      <div id="language-list-phone"></div>
     </div>
     <div
       style="font-weight:600; display: flex;flex-direction: column;gap:1rem;justify-content: center;align-items: center;">
@@ -183,7 +191,7 @@
         <div class="step1">ステップ1：携帯番号を入力して事前登録をし、豪華プレゼントを入手。</div>
         <div class="phone_content">
           <div>携帯電話番号を入力してください:</div>
-          <div style="display: flex;flex-direction: row;margin-top:0.15rem;">
+          <div class="input-content">
             <div id="country-select-div">
               <div id="country-select" value="852"><span>香港 +852</span> <div>▼</div></div>
               <div id="country-list"></div>
@@ -219,18 +227,19 @@
       </div>
 
       <div id="two_three" class="line2_5"></div>
-      <div id="a"></div>
+      <!-- <div id="a"></div>
       <div id="b"></div>
       <div id="c"></div>
       <div id="d"></div>
-      <div id="e"></div>
+      <div id="e"></div> -->
+      <div id="all_icon"></div>
 
       <div id="three" class="line3"></div>
       <div class="left_1 zoomable"></div>
       <div class="right_1 zoomable"></div>
       <div class="swiper mySwiper1 zoomable">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./images/content/view1.png" onclick="full(this.src, 'img')"></div>
+          <div class="swiper-slide"><img src="./imageJP/view1.png" onclick="full(this.src, 'img')"></div>
           <div class="swiper-slide">
             <iframe id="web_video" style="display: block;" width="100%" height="100%"
               src="https://www.youtube.com/embed/T2XJcoN5UGc?si=X9R64y7fnjtxCyci" title="YouTube video player"
@@ -240,8 +249,10 @@
             <img id="phone_video" style="display: none;" src="./images/content/temp.png"
               onclick="full('https://www.youtube.com/embed/T2XJcoN5UGc?si=X9R64y7fnjtxCyci?fs=0', 'video')">
           </div>
-          <div class="swiper-slide"><img src="./images/content/view2.png" onclick="full(this.src, 'img')"></div>
-          <div class="swiper-slide"><img src="./images/content/view3.png" onclick="full(this.src, 'img')"></div>
+          <div class="swiper-slide"><img src="./imageJP/view2.png" onclick="full(this.src, 'img')"></div>
+          <div class="swiper-slide"><img src="./imageJP/view3.png" onclick="full(this.src, 'img')"></div>
+          <div class="swiper-slide"><img src="./imageJP/view4.png" onclick="full(this.src, 'img')"></div>
+          <div class="swiper-slide"><img src="./imageJP/view5.png" onclick="full(this.src, 'img')"></div>
         </div>
       </div>
     </div>
@@ -252,20 +263,20 @@
       <div class="right_2 zoomable"></div>
       <div class="swiper mySwiper2 zoomable" id="role-pc">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./images/role/Character01.png"></div>
-          <div class="swiper-slide"><img src="./images/role/Character02.png"></div>
-          <div class="swiper-slide"><img src="./images/role/Character03.png"></div>
-          <div class="swiper-slide"><img src="./images/role/Character04.png"></div>
-          <div class="swiper-slide"><img src="./images/role/Character05.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/Character01.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/Character02.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/Character03.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/Character04.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/Character05.png"></div>
         </div>
       </div>
       <div class="swiper mySwiper3 zoomable" id="role-phone">
         <div class="swiper-wrapper" >
-          <div class="swiper-slide"><img src="./images/role/--0.png"></div>
-          <div class="swiper-slide"><img src="./images/role/--1.png"></div>
-          <div class="swiper-slide"><img src="./images/role/--2.png"></div>
-          <div class="swiper-slide"><img src="./images/role/--3.png"></div>
-          <div class="swiper-slide"><img src="./images/role/--4.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/--0.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/--1.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/--2.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/--3.png"></div>
+          <div class="swiper-slide"><img src="./imageJP/--4.png"></div>
         </div>
       </div>
       <div class="avatar zoomable">
@@ -303,6 +314,71 @@
 
 </body>
 <script>
+    const languages = [
+    {name:'繁體中文',link:'index.html'},
+    {name:'日本語',link:'index-jp.html'}
+  ];
+
+  const language_select_phone = document.getElementById('language-select-phone');
+  const language_list_phone = document.getElementById('language-list-phone');
+
+  language_select_phone.addEventListener('click', () => {
+    language_list_phone.style.display = language_list_phone.style.display === 'block' ? 'none' : 'block';
+    populateLanguageListPhone();
+  });
+
+  function populateLanguageListPhone() {
+    language_list_phone.innerHTML = '';
+    languages.forEach(language => {
+      const item = document.createElement('div');
+      item.className = 'language-item';
+      item.textContent = `${language.name}`;
+      item.addEventListener('click', () => {
+        language_select_phone.innerHTML = `<span>${language.name}</span>     <div>▼</div>`;
+        language_select_phone.setAttribute('value', language.link);
+        window.location.href = language.link;
+        language_list_phone.style.display = 'none';
+      });
+      language_list_phone.appendChild(item);
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!language_select_phone.contains(event.target) && !language_list_phone.contains(event.target)) {
+      language_list_phone.style.display = 'none';
+    }
+  });
+
+  const language_select = document.getElementById('language-select');
+  const language_list = document.getElementById('language-list');
+
+  language_select.addEventListener('click', () => {
+    language_list.style.display = language_list.style.display === 'block' ? 'none' : 'block';
+    populateLanguageList();
+  });
+
+  function populateLanguageList() {
+    language_list.innerHTML = '';
+    languages.forEach(language => {
+      const item = document.createElement('div');
+      item.className = 'language-item';
+      item.textContent = `${language.name}`;
+      item.addEventListener('click', () => {
+        language_select.innerHTML = `<span>${language.name}</span>     <div>▼</div>`;
+        language_select.setAttribute('value', language.link);
+        window.location.href = language.link;
+        language_list.style.display = 'none';
+      });
+      language_list.appendChild(item);
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!language_select.contains(event.target) && !language_list.contains(event.target)) {
+      language_list.style.display = 'none';
+    }
+  });
+
   const countries = [
     { name: '香港', code: '+852', region: '852' },
     { name: '澳門', code: '+853', region: '853' },
@@ -883,7 +959,7 @@
     }
     else if (!input.innerText) {
       //弹出手机号为空
-      err.getElementsByClassName('p1')[0].innerHTML = '輸入內容不可為空!'
+      err.getElementsByClassName('p1')[0].innerHTML = '入力内容が空です。'
       err.style.display = 'flex'
       return;
     }
@@ -932,17 +1008,17 @@
           // 成功登記後，出示感謝參與頁面時，網址會有所不同
           history.replaceState(null,"","/#complete")
         } else if (data.code === 400) {
-          err.getElementsByClassName('p1')[0].innerHTML = '本號碼已預約!'
+          err.getElementsByClassName('p1')[0].innerHTML = 'この番号はすでに予約されています。'
           err.style.display = 'flex'
           return;
         } else {
-          err.getElementsByClassName('p1')[0].innerHTML = '出現未知錯誤，請聯絡marketing@cyberalice.co'
+          err.getElementsByClassName('p1')[0].innerHTML = '不明なエラーが発生しました。marketing@cyberalice.co までお問い合わせください。'
           err.style.display = 'flex'
           return;
         }
       })
       .catch(error => {
-        err.getElementsByClassName('p1')[0].innerHTML = '網絡問題請重試！'
+        err.getElementsByClassName('p1')[0].innerHTML = 'ネットワークに問題があります。もう一度お試しください！'
         err.style.display = 'flex'
         return;
       });
