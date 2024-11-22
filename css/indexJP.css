@@ -809,6 +809,7 @@
     border-bottom-left-radius: 0.1rem;
     border-bottom-right-radius: 0.1rem;
     background-color: white;
+    padding-bottom: 0.1rem;
   }
   .language-item{
     width:0.8rem;
@@ -1408,7 +1409,7 @@
   }
   #country-checkbox{
     position: absolute;
-    left:2rem;
+    left:2.1rem;
     top: 1.7rem;
     width:0.2rem;
     height:0.2rem;
@@ -1417,7 +1418,7 @@
   #description{
     position: absolute;
     font-size: 0.15rem;
-    left:2.25rem;
+    left:2.35rem;
     top: 1.73rem;
   }
   .content .line2_5{
