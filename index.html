@@ -194,7 +194,7 @@
           <div>請輸入手機號:</div>
           <div style="display: flex;flex-direction: row;margin-top:0.15rem;">
             <div id="country-select-div">
-              <div id="country-select" value="852"><span>香港 +852</span> <div>▼</div></div>
+              <div id="country-select" value="852"><span> +852</span> <div>▼</div></div>
               <div id="country-list"></div>
             </div>
             <div id="editWrap" style="position: relative;">
@@ -227,11 +227,12 @@
       </div>
 
       <div id="two_three" class="line2_5"></div>
-      <div id="a"></div>
+      <!-- <div id="a"></div>
       <div id="b"></div>
       <div id="c"></div>
       <div id="d"></div>
-      <div id="e"></div>
+      <div id="e"></div> -->
+      <div id="all_icon"></div>
 
       <div id="three" class="line3"></div>
       <div class="left_1 zoomable"></div>
@@ -378,10 +379,11 @@
   });
 
   const countries = [
-    { name: '香港', code: '+852', region: '852' },
-    { name: '澳門', code: '+853', region: '853' },
-    { name: '台灣', code: '+886', region: '886' },
-    { name: '日本', code: '+81', region: '81' },
+    { name: ' ', code: '+86', region: '86' },
+    { name: ' ', code: '+852', region: '852' },
+    { name: ' ', code: '+853', region: '853' },
+    { name: ' ', code: '+886', region: '886' },
+    { name: ' ', code: '+81', region: '81' },
   ];
 
   const select = document.getElementById('country-select');
