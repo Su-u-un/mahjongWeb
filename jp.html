@@ -193,7 +193,7 @@
           <div>携帯電話番号を入力してください:</div>
           <div class="input-content">
             <div id="country-select-div">
-              <div id="country-select" value="81"><span>日本 +81</span> <div>▼</div></div>
+              <div id="country-select" value="81"><span> +81</span> <div>▼</div></div>
               <div id="country-list"></div>
             </div>
             <div id="editWrap" style="position: relative;">
@@ -214,6 +214,8 @@
           <a id="confirmAppstore" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
           <a id="confirmGoogle" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
           <a id="confirmSteam" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=fullicon2"></a>
+          <div class="p3">クローズドテスト参加</div>
+          <div id="join"></div>
         </div>
         <div id="err">
           <div class="p1">事前登録いただき、ありがとうございました。『天月麻雀』の正式リリースをお楽しみに！</div>
@@ -380,10 +382,11 @@
   });
 
   const countries = [
-    { name: '香港', code: '+852', region: '852' },
-    { name: '澳門', code: '+853', region: '853' },
-    { name: '台灣', code: '+886', region: '886' },
-    { name: '日本', code: '+81', region: '81' },
+    { name: ' ', code: '+86', region: '86' },
+    { name: ' ', code: '+852', region: '852' },
+    { name: ' ', code: '+853', region: '853' },
+    { name: ' ', code: '+886', region: '886' },
+    { name: ' ', code: '+81', region: '81' },
   ];
 
   const select = document.getElementById('country-select');

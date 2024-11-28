@@ -196,7 +196,7 @@
     position: absolute;
     display: block;
     left:2.2rem;
-    top: 1.6rem;
+    top: 1.3rem;
     height: 1rem;
     width: 2.5rem;
     background: url(../images/content/confirm_btn.png) no-repeat ;
@@ -217,8 +217,8 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:1.3rem;
-    top: 4rem;
+    left:1.4rem;
+    top: 2.7rem;
     height: 0.7rem;
     width: 1.7rem;
     background: url(../imageJP/Appstore.svg) no-repeat ;
@@ -260,9 +260,9 @@
     position: absolute;
     display: block;
     right:1.3rem;
-    top: 4rem;
-    height: 0.7rem;
-    width: 2.1rem;
+    top: 2.7rem;
+    height: 0.6rem;
+    width: 2rem;
     background: url(../images/content/Steam.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
@@ -283,15 +283,33 @@
     font-size: 0.3rem;
     display: block;
     left:0.3rem;
-    top: 0.8rem;
+    top: 0.5rem;
   }
   
   #tip .p2{
     position: absolute;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
     display: block;
     left:1.8rem;
-    top: 3.2rem;
+    top: 2.3rem;
+  }
+  #tip .p3{
+    position: absolute;
+    font-size: 0.3rem;
+    display: block;
+    left:2.2rem;
+    top: 3.6rem;
+  }
+  #join {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.2rem;
+    top: 4rem;
+    height: 1rem;
+    width: 2.5rem;
+    background: url(../imageJP/join.png) no-repeat ;
+    background-size: 100%;
   }
   #tip{
     display: none;
@@ -556,11 +574,12 @@
     width: 5rem;
   }
   #country-select{
+    font-size: 0.3rem;
     user-select:none;
     display: flex;
     flex-direction: row;
     /* margin-top: 0.15rem; */
-    width:1.7rem;
+    width:1.1rem;
     padding:0.05rem;
   }
   #country-select-div{
@@ -580,7 +599,8 @@
     color:black;
   }
   .country-item{
-    width:1.7rem;
+    font-size: 0.3rem;
+    width:0.9rem;
     padding-top:0.05rem;
   }
   #country-input{
@@ -985,8 +1005,8 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:1.3rem;
-    top: 1.05rem;
+    left:1.2rem;
+    top: 0.7rem;
     height: 0.6rem;
     width: 1.5rem;
     background: url(../images/content/confirm_btn.png) no-repeat ;
@@ -998,8 +1018,8 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:1.25rem;
-    top: 1.03rem;
+    left:1.15rem;
+    top: 0.68rem;
     height: 0.7rem;
     width: 1.6rem;
   }
@@ -1008,7 +1028,7 @@
     position: absolute;
     display: block;
     left:0.85rem;
-    top: 2.3rem;
+    top: 1.6rem;
     height: 0.35rem;
     width: 0.9rem;
     background: url(../imageJP/Appstore.svg) no-repeat ;
@@ -1021,7 +1041,7 @@
     position: absolute;
     display: block;
     left:0.8rem;
-    top: 2.29rem;
+    top: 1.58rem;
     height: 0.5rem;
     width: 1rem;
   }
@@ -1050,7 +1070,7 @@
     position: absolute;
     display: block;
     right:0.85rem;
-    top: 2.3rem;
+    top: 1.6rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../images/content/Steam.png) no-repeat ;
@@ -1063,7 +1083,7 @@
     position: absolute;
     display: block;
     right:0.8rem;
-    top: 2.29rem;
+    top: 1.58rem;
     height: 0.5rem;
     width: 1.15rem;
   }
@@ -1072,8 +1092,8 @@
     position: absolute;
     font-size: 0.17rem;
     display: block;
-    left:0.25rem;
-    top: 0.5rem;
+    left:0.2rem;
+    top: 0.3rem;
   }
   
   #tip .p2{
@@ -1081,7 +1101,35 @@
     font-size: 0.17rem;
     display: block;
     left:1rem;
-    top: 1.9rem;
+    top: 1.35rem;
+  }
+  #tip .p3{
+    position: absolute;
+    font-size: 0.17rem;
+    display: block;
+    left:1.2rem;
+    top: 2.1rem;
+  }
+  #join {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.2rem;
+    top: 2.3rem;
+    height: 0.6rem;
+    width: 1.5rem;
+    background: url(../images/content/join.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  #join:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.18rem;
+    top: 2.29rem;
+    height: 0.7rem;
+    width: 1.55rem;
   }
   #tip{
     display: none;
@@ -1366,7 +1414,7 @@
     display: flex;
     flex-direction: row;
     /* margin-top: 0.15rem; */
-    width:1rem;
+    width:0.6rem;
     padding:0.05rem;
     /* border:black 0.03rem solid; */
   }
@@ -1393,7 +1441,7 @@
     color:black;
   }
   .country-item{
-    width:1rem;
+    width:0.6rem;
     padding-top:0.05rem;
   }
   #country-input{
