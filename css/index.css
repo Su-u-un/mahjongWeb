@@ -1,4 +1,18 @@
+/* mobile */
 @media (max-width:478px) {
+  .age{
+    position: absolute;
+    height:0.8rem;
+    bottom:1rem;
+    left:3rem;
+  }
+  .age_text{
+    font-size:0.2rem;
+    position: absolute;
+    bottom: 1rem;
+    left:4.1rem;
+    width:3rem;
+  }
   #language-select-div-phone{
     /* margin-left: 0.3rem; */
     font-size:1rem;
@@ -790,8 +804,21 @@
     margin-bottom: 0.25rem;
   }
 }
-
+/* pc */
 @media (min-width:478px) {
+  .age{
+    position: absolute;
+    height:0.5rem;
+    bottom:0.1rem;
+    left:3.5rem;
+  }
+  .age_text{
+    font-size:0.12rem;
+    position: absolute;
+    bottom:0.2rem;
+    left:4.1rem;
+    width:2.8rem;
+  }
   #language-select-div{
     margin-left: 0.3rem;
     display: flex;
