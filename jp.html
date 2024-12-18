@@ -1013,7 +1013,7 @@
         if (data.code === 200) {
           tip.style.display = 'block'
           // 成功登記後，出示感謝參與頁面時，網址會有所不同
-          history.replaceState(null,"","/#complete")
+          history.replaceState(null,"","/jp.html#complete")
         } else if (data.code === 400) {
           err.getElementsByClassName('p1')[0].innerHTML = 'この番号はすでに予約されています。'
           err.style.display = 'flex'

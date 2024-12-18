@@ -239,11 +239,11 @@
   } */
   #confirmGoogle{
     position: absolute;
-    left:4.5rem;
+    right:2.6rem;
     top: 2.7rem;
     height: 0.6rem;
-    width: 2.1rem;
-    background: url(../images/content/Google.png) no-repeat ;
+    width: 2rem;
+    background: url(../imageJP/Google.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -259,10 +259,10 @@
   } */
   #confirmSteam{
     position: absolute;
-    right:2.6rem;
+    left:4.5rem;
     top: 2.7rem;
     height: 0.6rem;
-    width: 2rem;
+    width: 2.1rem;
     background: url(../images/content/Steam.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
@@ -457,11 +457,11 @@
   } */
   #google{
     position: absolute;
-    left:6.1rem;
+    left:4.2rem;
     top: 5.5rem;
     height: 0.6rem;
     width: 1.8rem;
-    background: url(../images/content/Google.png) no-repeat ;
+    background: url(../imageJP/Google.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
@@ -478,7 +478,7 @@
   #steam{
     position: absolute;
     display: block;
-    left:4.2rem;
+    left:6.1rem;
     top: 5.5rem;
     height: 0.6rem;
     width: 1.8rem;
@@ -1044,29 +1044,9 @@
     height: 0.5rem;
     width: 1rem;
   }
-  #confirmGoogle{
-    position: absolute;
-    left:2.6rem;
-    top: 1.6rem;
-    height: 0.35rem;
-    width: 1.1rem;
-    background: url(../images/content/Google.png) no-repeat ;
-    background-size: 100%;
-    transition: all 0.4s ease-in-out;
-  }
-  
-  #confirmGoogle:hover{
-    cursor: pointer;
-    position: absolute;
-    left:2.62rem;
-    top: 1.59rem;
-    height: 0.5rem;
-    width: 1.15rem;
-  }
   #confirmSteam{
     position: absolute;
-    display: block;
-    right:1.5rem;
+    left:2.6rem;
     top: 1.6rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -1076,6 +1056,26 @@
   }
   
   #confirmSteam:hover{
+    cursor: pointer;
+    position: absolute;
+    left:2.62rem;
+    top: 1.59rem;
+    height: 0.5rem;
+    width: 1.15rem;
+  }
+  #confirmGoogle{
+    position: absolute;
+    display: block;
+    right:1.5rem;
+    top: 1.6rem;
+    height: 0.35rem;
+    width: 1.1rem;
+    background: url(../imageJP/Google.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirmGoogle:hover{
     cursor: pointer;
     position: absolute;
     display: block;
@@ -1288,18 +1288,18 @@
     height: 0.35rem;
     width: 0.9rem;
   }
-  #google{
+  #steam{
     position: absolute;
     left:4.2rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
-    background: url(../images/content/Google.png) no-repeat ;
+    background: url(../images/content/steam.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
   
-  #google:hover{
+  #steam:hover{
     cursor: pointer;
     position: absolute;
     left:4.15rem;
@@ -1307,19 +1307,19 @@
     height: 0.4rem;
     width: 1.05rem;
   }
-  #steam{
+  #google{
     position: absolute;
     display: block;
     left:3.05rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
-    background: url(../images/content/Steam.png) no-repeat ;
+    background: url(../imageJP/Google.png) no-repeat ;
     background-size: 100%;
     transition: all 0.4s ease-in-out;
   }
   
-  #steam:hover{
+  #google:hover{
     cursor: pointer;
     position: absolute;
     display: block;
