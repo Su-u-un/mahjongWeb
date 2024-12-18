@@ -1046,9 +1046,8 @@
   }
   #confirmGoogle{
     position: absolute;
-    display: none;
-    left:2.5rem;
-    top: 1.5rem;
+    left:2.6rem;
+    top: 1.6rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../images/content/Google.png) no-repeat ;
@@ -1059,9 +1058,8 @@
   #confirmGoogle:hover{
     cursor: pointer;
     position: absolute;
-    display: none;
-    left:2.52rem;
-    top: 1.49rem;
+    left:2.62rem;
+    top: 1.59rem;
     height: 0.5rem;
     width: 1.15rem;
   }
@@ -1081,8 +1079,8 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    right:0.8rem;
-    top: 1.58rem;
+    right:1.47rem;
+    top: 1.59rem;
     height: 0.5rem;
     width: 1.15rem;
   }
@@ -1287,13 +1285,12 @@
     display: block;
     left:2rem;
     top: 2.88rem;
-    height: 0.4rem;
-    width: 1.05rem;
+    height: 0.35rem;
+    width: 0.9rem;
   }
   #google{
     position: absolute;
-    display: none;
-    left:2.05rem;
+    left:4.2rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
@@ -1305,8 +1302,7 @@
   #google:hover{
     cursor: pointer;
     position: absolute;
-    display: none;
-    left:4rem;
+    left:4.15rem;
     top: 2.88rem;
     height: 0.4rem;
     width: 1.05rem;
