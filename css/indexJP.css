@@ -219,7 +219,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:1.4rem;
+    left:0.6rem;
     top: 2.7rem;
     height: 0.7rem;
     width: 1.7rem;
@@ -239,10 +239,9 @@
   } */
   #confirmGoogle{
     position: absolute;
-    display: none;
-    left:0.3rem;
-    top: 4rem;
-    height: 0.7rem;
+    left:4.5rem;
+    top: 2.7rem;
+    height: 0.6rem;
     width: 2.1rem;
     background: url(../images/content/Google.png) no-repeat ;
     background-size: 100%;
@@ -260,8 +259,7 @@
   } */
   #confirmSteam{
     position: absolute;
-    display: block;
-    right:1.3rem;
+    right:2.6rem;
     top: 2.7rem;
     height: 0.6rem;
     width: 2rem;
@@ -459,9 +457,8 @@
   } */
   #google{
     position: absolute;
-    display: none;
-    left:2.1rem;
-    top: 5.6rem;
+    left:6.1rem;
+    top: 5.5rem;
     height: 0.6rem;
     width: 1.8rem;
     background: url(../images/content/Google.png) no-repeat ;
@@ -481,7 +478,7 @@
   #steam{
     position: absolute;
     display: block;
-    left:4.4rem;
+    left:4.2rem;
     top: 5.5rem;
     height: 0.6rem;
     width: 1.8rem;
@@ -1029,7 +1026,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:0.85rem;
+    left:0.3rem;
     top: 1.6rem;
     height: 0.35rem;
     width: 0.9rem;
@@ -1042,7 +1039,7 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:0.8rem;
+    left:0.25rem;
     top: 1.58rem;
     height: 0.5rem;
     width: 1rem;
@@ -1050,8 +1047,8 @@
   #confirmGoogle{
     position: absolute;
     display: none;
-    left:0.25rem;
-    top: 2.3rem;
+    left:2.5rem;
+    top: 1.5rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../images/content/Google.png) no-repeat ;
@@ -1063,15 +1060,15 @@
     cursor: pointer;
     position: absolute;
     display: none;
-    left:0.24rem;
-    top: 2.29rem;
+    left:2.52rem;
+    top: 1.49rem;
     height: 0.5rem;
     width: 1.15rem;
   }
   #confirmSteam{
     position: absolute;
     display: block;
-    right:0.85rem;
+    right:1.5rem;
     top: 1.6rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -1309,7 +1306,7 @@
     cursor: pointer;
     position: absolute;
     display: none;
-    left:2rem;
+    left:4rem;
     top: 2.88rem;
     height: 0.4rem;
     width: 1.05rem;

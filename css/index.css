@@ -227,7 +227,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:1.3rem;
+    left:0.3rem;
     top: 2.7rem;
     height: 0.7rem;
     width: 2.1rem;
@@ -247,9 +247,8 @@
   } */
   #confirmGoogle{
     position: absolute;
-    display: none;
-    left:0.3rem;
-    top: 4rem;
+    left:4.6rem;
+    top: 2.7rem;
     height: 0.7rem;
     width: 2.1rem;
     background: url(../images/content/Google.png) no-repeat ;
@@ -269,7 +268,7 @@
   #confirmSteam{
     position: absolute;
     display: block;
-    right:1.3rem;
+    right:2.45rem;
     top: 2.7rem;
     height: 0.7rem;
     width: 2.1rem;
@@ -466,8 +465,7 @@
   } */
   #google{
     position: absolute;
-    display: none;
-    left:2.1rem;
+    left:5.7rem;
     top: 5.6rem;
     height: 0.6rem;
     width: 1.8rem;
@@ -1038,7 +1036,7 @@
   #confirmAppstore{
     position: absolute;
     display: block;
-    left:0.85rem;
+    left:0.3rem;
     top: 1.5rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -1051,16 +1049,15 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    left:0.8rem;
+    left:0.25rem;
     top: 1.49rem;
     height: 0.5rem;
     width: 1.15rem;
   }
   #confirmGoogle{
     position: absolute;
-    display: none;
-    left:0.25rem;
-    top: 2.3rem;
+    left:2.5rem;
+    top: 1.5rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../images/content/Google.png) no-repeat ;
@@ -1071,16 +1068,15 @@
   #confirmGoogle:hover{
     cursor: pointer;
     position: absolute;
-    display: none;
-    left:0.24rem;
-    top: 2.29rem;
+    left:2.52rem;
+    top: 1.49rem;
     height: 0.5rem;
     width: 1.15rem;
   }
   #confirmSteam{
     position: absolute;
     display: block;
-    right:0.85rem;
+    right:1.5rem;
     top: 1.5rem;
     height: 0.35rem;
     width: 1.1rem;
@@ -1093,7 +1089,7 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    right:0.8rem;
+    right:1.48rem;
     top: 1.49rem;
     height: 0.5rem;
     width: 1.15rem;
@@ -1303,8 +1299,7 @@
   }
   #google{
     position: absolute;
-    display: none;
-    left:2.05rem;
+    left:4.05rem;
     top: 2.9rem;
     height: 0.3rem;
     width: 0.95rem;
@@ -1316,8 +1311,7 @@
   #google:hover{
     cursor: pointer;
     position: absolute;
-    display: none;
-    left:2rem;
+    left:4rem;
     top: 2.88rem;
     height: 0.4rem;
     width: 1.05rem;
