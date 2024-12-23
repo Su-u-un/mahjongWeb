@@ -69,8 +69,8 @@
     <div class="loading-text" id="loadingText">Loading… 0%</div>
   </div>
   <a id="banner_pc" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=sideicon"></a>
-  <a id="banner_android" href="https://amatsukimj.onelink.me/fTLj/v7754cfj"></a>
-  <a id="banner_ios" href="https://amatsukimj.onelink.me/fTLj/v7754cfj"></a>
+  <a id="banner_android" href="https://amatsukimj.onelink.me/23qA/ju8mpxty"></a>
+  <a id="banner_ios" href="https://amatsukimj.onelink.me/gXBh/qwuahxj8"></a>
   <div id="tmp">
 
     <div class="header_web">
@@ -193,8 +193,7 @@
           <div>携帯電話番号を入力してください:</div>
           <div class="input-content">
             <div id="country-select-div">
-              <div id="country-select" value="81"><span> +81</span> <div>▼</div></div>
-              <div id="country-list"></div>
+              <div id="country-select" value="81"><span> +81</span> </div>
             </div>
             <div id="editWrap" style="position: relative;">
               <div id="editable" contenteditable="true">
@@ -211,8 +210,8 @@
           </div>
           <div id="confirm"></div>
           <div class="p2">次のストアで予約可能です：</div>
-          <a id="confirmAppstore" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
-          <a id="confirmGoogle" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
+          <a id="confirmAppstore" href="https://amatsukimj.onelink.me/gXBh/xq6ltvx8"></a>
+          <a id="confirmGoogle" href="https://amatsukimj.onelink.me/23qA/0ma8q5ak"></a>
           <a id="confirmSteam" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=fullicon2"></a>
           <div class="p3">クローズドテスト参加</div>
           <a id="join" href="https://linktr.ee/amatsukimahjong"></a>
@@ -223,8 +222,8 @@
         </div>
         <div id="description">プライバシーポリシーに同意し、報酬関連情報を受信</div>
         <div class="step2">ステップ2：事前登録プラットフォームを選びます</div>
-        <a id="appstore" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
-        <a id="google" href="https://amatsukimj.onelink.me/fTLj/xgr5wer6"></a>
+        <a id="appstore" href="https://amatsukimj.onelink.me/gXBh/xq6ltvx8"></a>
+        <a id="google" href="https://amatsukimj.onelink.me/23qA/0ma8q5ak"></a>
         <a id="steam" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=fullicon"></a></div>
       </div>
 
@@ -380,43 +379,43 @@
     }
   });
 
-  const countries = [
-    { name: ' ', code: '+86', region: '86' },
-    { name: ' ', code: '+852', region: '852' },
-    { name: ' ', code: '+853', region: '853' },
-    { name: ' ', code: '+886', region: '886' },
-    { name: ' ', code: '+81', region: '81' },
-  ];
+  // const countries = [
+  //   { name: ' ', code: '+86', region: '86' },
+  //   { name: ' ', code: '+852', region: '852' },
+  //   { name: ' ', code: '+853', region: '853' },
+  //   { name: ' ', code: '+886', region: '886' },
+  //   { name: ' ', code: '+81', region: '81' },
+  // ];
 
   const select = document.getElementById('country-select');
-  const list = document.getElementById('country-list');
+  // const list = document.getElementById('country-list');
 
-  select.addEventListener('click', () => {
-    list.style.display = list.style.display === 'block' ? 'none' : 'block';
-    populateCountryList();
-  });
+  // select.addEventListener('click', () => {
+  //   list.style.display = list.style.display === 'block' ? 'none' : 'block';
+  //   populateCountryList();
+  // });
 
-  function populateCountryList() {
-    list.innerHTML = '';
-    countries.forEach(country => {
-      const item = document.createElement('div');
-      item.className = 'country-item';
-      item.textContent = `${country.name} ${country.code}`;
-      item.addEventListener('click', () => {
-        select.innerHTML = `<span>${country.name} ${country.code}</span>  <div>▼</div>`;
-        select.setAttribute('value', country.region);
-        // console.log(select.getAttribute('value'));
-        list.style.display = 'none';
-      });
-      list.appendChild(item);
-    });
-  }
+  // function populateCountryList() {
+  //   list.innerHTML = '';
+  //   countries.forEach(country => {
+  //     const item = document.createElement('div');
+  //     item.className = 'country-item';
+  //     item.textContent = `${country.name} ${country.code}`;
+  //     item.addEventListener('click', () => {
+  //       select.innerHTML = `<span>${country.name} ${country.code}</span>  <div>▼</div>`;
+  //       select.setAttribute('value', country.region);
+  //       // console.log(select.getAttribute('value'));
+  //       list.style.display = 'none';
+  //     });
+  //     list.appendChild(item);
+  //   });
+  // }
 
-  document.addEventListener('click', (event) => {
-    if (!select.contains(event.target) && !list.contains(event.target)) {
-      list.style.display = 'none';
-    }
-  });
+  // document.addEventListener('click', (event) => {
+  //   if (!select.contains(event.target) && !list.contains(event.target)) {
+  //     list.style.display = 'none';
+  //   }
+  // });
   var menu = document.querySelector('#menu');
   var main = document.getElementsByTagName('body')[0];
   var tmp = document.getElementById('tmp');
