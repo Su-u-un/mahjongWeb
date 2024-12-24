@@ -1,0 +1,1892 @@
+@media (max-width:478px) {
+  .content .register_role{
+    position: absolute;
+    right: 0.1rem;
+    top:0;
+    width:3.3rem;
+    background: url(../imageJP/register_role.png);
+  }
+  #language-select-div-phone{
+    /* margin-left: 0.3rem; */
+    font-size:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    color:#537fb6;
+    height: 1rem;
+  }
+  #language-select-phone{
+    position: absolute;
+    user-select:none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:5rem;
+    text-align: center;
+    padding:0.05rem;
+    border:#537fb6 solid 0.1rem;
+  }
+  #language-list-phone{
+    text-align: center;
+    display: none;
+    position: relative;
+    z-index: 10;
+    user-select:none;
+    padding:0 0.05rem;
+    top:1.1rem;
+    border:#537fb6 0.1rem solid;
+    background-color: white;
+    width: 5rem;
+  }
+  .language-item{
+    padding-top:0.1rem;
+  }
+  .input-content{
+    display: flex;
+    flex-direction: row;
+    margin-top:0.3rem;
+  }
+  #editWrap{
+    border: 0.05rem solid black;
+    min-width:3.6rem;
+    margin-left:0.1rem;
+    align-content: center;
+    max-height: 0.45rem;
+    min-height: 0.45rem;
+  }
+  #editable{
+    outline: none;
+    padding:0 0.05rem;
+  }
+  
+  #placeholder{
+    color: #a6a6a4; 
+    position: absolute; 
+    pointer-events: none;
+    font-size:0.2rem;
+    top:0.08rem;
+    left:0.05rem;
+  }
+  .content .swiper-slide {
+    display: flex;
+    gap:6rem;
+    width:8rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .swiper-slide iframe {
+    display: block;
+    width: 8rem;
+    height:3.38rem;
+    object-fit: cover;
+    border:0.03rem solid #537fb6;
+    border-radius: 0.1rem;
+  }
+  
+  .content .swiper-slide img{
+    display: block;
+    width: 8rem;
+    object-fit: cover;
+    border:0.03rem solid #537fb6;
+    border-radius: 0.1rem;
+  }
+  .line1 {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    width: 10rem;
+    height: 3rem;
+    z-index:10;
+    background: url(../imageJP/linephone1.png) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .line4 {
+  position: absolute;
+  top: -1.2rem;;
+  left: 0;
+  width: 10rem;
+  height: 3rem;
+  z-index:10;
+  background: url(../imageJP/linephone4.png) no-repeat ;
+  background-size: 100%;
+  }
+  .line5 {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 10rem;
+  height: 3rem;
+  z-index:10;
+  background: url(../imageJP/linephone5.png) no-repeat ;
+  background-size: 100%;
+  }
+  .content .line2 {
+    position: absolute;
+    top: 5rem;
+    height: 3rem;
+    width: 100%;
+    background: url(../imageJP/linephone2.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg2 .private{
+    position: absolute;
+    bottom: 3.2rem;
+    left:1.5rem;
+    height: 0.85rem;
+    width: 2.9rem;
+    background: url(../imageJP/private.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bg2 .service{
+    position: absolute;
+    bottom: 3.2rem;
+    right:1.5rem;
+    height: 0.85rem;
+    width: 2.9rem;
+    background: url(../imageJP/service.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bg2 .offical {
+    position: absolute;
+    bottom: 2rem;
+    right:1.5rem;
+    height: 0.85rem;
+    width: 7rem;
+    background: url(../images/box2/logo_phone.png) no-repeat;
+    background-size: 100%;
+  }
+  .bg2{
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    background: url(../images/box2/attention_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .content .text{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.35rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem;
+  }
+  .content p {
+    margin-bottom: 0.25rem;
+  }
+  .role {
+    position: relative;
+    width: 100%;
+    height:13.2rem;
+    background: url(../images/role/role_phonebg.png) no-repeat ;
+    background-size: 100%;
+  }
+  #role-phone{
+    display: flex;
+  }
+  #role-pc{
+    display: none;
+  }
+  #confirm{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.2rem;
+    top: 1.3rem;
+    height: 1rem;
+    width: 2.5rem;
+    background: url(../images/content/confirm_btn.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirm:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.15rem;
+    top: 1.55rem;
+    height: 1.1rem;
+    width: 2.6rem;
+  }
+  
+  #confirmAppstore{
+    position: absolute;
+    display: block;
+    left:0.6rem;
+    top: 2.7rem;
+    height: 0.7rem;
+    width: 1.7rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #confirmAppstore:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.38rem;
+    top: 4rem;
+    height: 0.7rem;
+    width: 2.1rem;
+  } */
+  #confirmGoogle{
+    position: absolute;
+    right:2.6rem;
+    top: 2.7rem;
+    height: 0.6rem;
+    width: 2rem;
+    background: url(../imageJP/Google.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #confirmGoogle:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:0.3rem;
+    top: 3.95rem;
+    height: 0.7rem;
+    width: 2.2rem;
+  } */
+  #confirmSteam{
+    position: absolute;
+    left:4.5rem;
+    top: 2.7rem;
+    height: 0.6rem;
+    width: 2.1rem;
+    background: url(../images/content/Steam.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #confirmSteam:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:4.55rem;
+    top: 3.95rem;
+    height: 0.7rem;
+    width: 2.2rem;
+  } */
+  
+  #tip .p1{
+    position: absolute;
+    font-size: 0.3rem;
+    display: block;
+    left:0.3rem;
+    top: 0.5rem;
+  }
+  
+  #tip .p2{
+    position: absolute;
+    font-size: 0.25rem;
+    display: block;
+    left:1.8rem;
+    top: 2.3rem;
+  }
+  #tip .p3{
+    position: absolute;
+    font-size: 0.3rem;
+    display: block;
+    left:2.2rem;
+    top: 3.6rem;
+  }
+  #join {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.2rem;
+    top: 4rem;
+    height: 1rem;
+    width: 2.5rem;
+    background: url(../imageJP/join.png) no-repeat ;
+    background-size: 100%;
+  }
+  #tip{
+    display: none;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    background: url(../images/content/confirm.png) no-repeat;
+    width:7rem;
+    height:5.2rem;
+    z-index: 400;
+    background-size: 100%;
+    border-radius: 0.05rem;
+    box-shadow: grey 0 0 0.09rem ;
+  }
+  .left_1 {
+    position: absolute;
+    top: 26.5rem;
+    left: 0.2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/l.svg) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .right_1 {
+    position: absolute;
+    top: 26.5rem;
+    right: 0.2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/r.svg) no-repeat ;
+    background-size: 100%;
+  }
+
+  .left_2 {
+    position: absolute;
+    top: 6rem;
+    left: 0.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index:10;
+    background: url(../images/role/l.svg) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .right_2 {
+    position: absolute;
+    top: 6rem;
+    right: 0.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index:10;
+    background: url(../images/role/r.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../images/content/content_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .content .line3 {
+    position: absolute;
+    top: 21.6rem;
+    height: 3rem;
+    width: 100%;
+    background: url(../imageJP/linephone3.png) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .content .swiper{
+    position: absolute;
+    top: 24.3rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  #err{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    background: url(../images/content/confirm.png) no-repeat;
+    width:7rem;
+    height:5.2rem;
+    z-index: 400;
+    background-size: 100%;
+    border-radius: 0.05rem;
+    box-shadow: grey 0 0 0.09rem ;
+  }
+  
+  #err .p1{
+    font-size: 0.3rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+  #confirm2{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.3rem;
+    top: 3.05rem;
+    height: 1rem;
+    width: 2.5rem;
+    background: url(../imageJP/back.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  /* input[type="checkbox"]{
+    border:0.05rem solid #000;
+    background-color:transparent;
+    color:transparent;
+    text-align:center;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+  } */
+  #appstore{
+    position: absolute;
+    display: block;
+    left:0.4rem;
+    top: 3.5rem;
+    height: 1rem;
+    width: 2.3rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #appstore:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:3.85rem;
+    top: 5.58rem;
+    height: 0.7rem;
+    width: 1.9rem;
+  } */
+  #google{
+    position: absolute;
+    left:2.8rem;
+    top: 3.5rem;
+    height: 1rem;
+    width: 2.9rem;
+    background: url(../imageJP/Google.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #google:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2rem;
+    top: 5.58rem;
+    height: 0.7rem;
+    width: 1.9rem;
+  } */
+  #steam{
+    position: absolute;
+    display: block;
+    left:5.8rem;
+    top: 3.5rem;
+    height: 1rem;
+    width: 2.9rem;
+    background: url(../images/content/Steam.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* #steam:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:5.65rem;
+    top: 5.58rem;
+    height: 0.7rem;
+    width: 1.9rem;
+  } */
+  
+  /* input[type="checkbox"]:after{
+    position: absolute;
+    top:0;
+    left:0.03rem;
+    content:"\2714";
+    font-weight: 600;
+    font-size: 0.3rem;
+  } */
+  .content .login_btn{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:3.5rem;
+    top: 3.75rem;
+    height: 1rem;
+    width: 3rem;
+    background: url(../imageJP/login.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .content .login_btn:hover{
+    position: absolute;
+    display: block;
+    left:3.4rem;
+    top: 3.8rem;
+    height: 1.2rem;
+    width: 3.2rem;
+  }
+  
+  .content .register_btn{
+    position: absolute;
+    display: block;
+    left:1.4rem;
+    top: 0.7rem;
+    height: 2.4rem;
+    width: 0.7rem;
+    background: url(../images/content/register_btn.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .content .register_btn:hover{
+    position: absolute;
+    display: block;
+    left:1.35rem;
+    top: 0.5rem;
+    height: 2.8rem;
+    width: 0.8rem;
+  }
+  
+  .content .step1{
+    position: absolute;
+    display: block;
+    font-size: 0.25rem;
+    left:2.45rem;
+    top: 1.2rem;
+    width: 6.35rem;
+  }
+  .content .step2{
+    position: absolute;
+    display: block;
+    font-size: 0.5rem;
+    left:0.45rem;
+    top: 1.5rem;
+    width: 8.6rem;
+  }
+  .content .phone_content{
+    position: absolute;
+    display: block;
+    font-size: 0.25rem;
+    left:2.45rem;
+    top: 1.9rem;
+    width: 5rem;
+  }
+  #country-select{
+    font-size: 0.3rem;
+    user-select:none;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:1.1rem;
+    padding:0.05rem;
+  }
+  #country-select-div{
+    border:black 0.05rem solid;
+  }
+  #country-list{
+    display: none;
+    position: relative;
+    z-index: 10;
+    background-color: #fbfaf7;
+    user-select:none;
+    padding:0.05rem;
+    border-top:black 0.05rem solid;
+  }
+  #country-list:hover{
+    cursor: pointer;
+    color:black;
+  }
+  .country-item{
+    font-size: 0.3rem;
+    width:0.9rem;
+    padding-top:0.05rem;
+  }
+  #country-input{
+    background-color:transparent;
+    font-size: 0.2rem;
+    font-weight: 600;
+  }
+  #country-input-div{
+    position: absolute;
+    left: 2rem;
+    padding: 0.05rem;
+    border:black 0.05rem solid;
+  }
+  #country-checkbox{
+    position: absolute;
+    left:2.5rem;
+    top: 3.2rem;
+    width:0.4rem;
+    height:0.4rem;
+  }
+  
+  #description{
+    position: absolute;
+    font-size: 0.25rem;
+    left:3rem;
+    top: 3.3rem;
+  }
+  .content .line2_5{
+    position: absolute;
+    top: 14rem;
+    height: 3rem;
+    width: 100%;
+    background: url(../imageJP/linephone22.png) no-repeat ;
+    background-size: 100%;
+  }
+  #all_icon{
+    position: absolute;
+    top: 15.5rem;
+    left:1.3rem;
+    background: url(../imageJP/all_icon.png) no-repeat ;
+    background-size: 100%;
+    width:7.4rem;
+    height:7.4rem;
+  }
+
+  #a{
+    position: absolute;
+    top: 16rem;
+    left:2.4rem;
+    background: url(../images/content/50,000.png) no-repeat ;
+    background-size: 100%;
+    width:2.4rem;
+    height:2.4rem;
+  }
+  #b{
+    position: absolute;
+    top: 16rem;
+    right:2.4rem;
+    background: url(../images/content/100,000.png) no-repeat ;
+    background-size: 100%;
+    width:2.4rem;
+    height:2.4rem;
+  }
+  #c{
+    position: absolute;
+    top: 19rem;
+    left:1.2rem;
+    background: url(../images/content/200000.png) no-repeat ;
+    background-size: 100%;
+    width:2.4rem;
+    height:2.4rem;
+  }
+  #d{
+    position: absolute;
+    top: 19rem;
+    left:3.8rem;
+    background: url(../images/content/300000.png) no-repeat ;
+    background-size: 100%;
+    width:2.4rem;
+    height:2.4rem;
+  }
+  #e{
+    position: absolute;
+    top: 19rem;
+    right:1.2rem;
+    background: url(../images/content/400000.png) no-repeat ;
+    background-size: 100%;
+    width:2.4rem;
+    height:2.4rem;
+  }
+  
+  .content .registerLayout{
+    position: absolute;
+    /* left:1.5rem; */
+    top: 7.3rem;
+  }
+  .content .register{
+    /* position: absolute; */
+    /* left:1.5rem; */
+    /* top: 7.8rem; */
+    height: 7rem;
+    width: 10rem;
+    background: url(../imageJP/ad_phone.png) no-repeat ;
+    background-size: 100%;
+  }
+  .role .swiper-slide img{
+    user-select:none;
+    display: block;
+    width: 10rem;
+    object-fit: cover;
+  }
+  .loading-container {
+    text-align: center;
+    background: url(../images/box1/popup.png) no-repeat;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  .loading-container img {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%, 0) rotateY(0); /* 先平移再旋转 */
+    animation: rotate 4s linear infinite; /* 旋转动画 */
+  }
+  .progress {
+    position: absolute;
+    top: 12.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.5rem;
+    background: #e0e0e0;
+    overflow: hidden;
+  }
+  .progress-bar {
+    height: 0.067rem;
+    width: 0;
+    background: #9AC2FF;
+    transition: width 0.1s;
+  }
+  .loading-text {
+    position: absolute;
+    top: 13rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.5rem;
+    color: #5B89BB;
+  }
+  .header_web{
+    display: none;
+  }
+  .header_phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:10rem;
+    height:1.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    z-index: 800;
+  }
+  .bg_phone{
+    position: relative;
+    width: 10rem;
+    height: 18.5rem;
+    background: url(../images/box1/home_page.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg1{
+    display: none;
+  }
+  
+  .bg2 .text{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem;
+  }
+  .bg2 .slideLine{
+    margin-bottom: 0.5rem;
+  }
+  .bg2 p {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:478px) {
+  #language-select-div{
+    margin-left: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.15rem;
+    color:#537fb6;
+  }
+  #language-select{
+    position: absolute;
+    user-select:none;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:0.8rem;
+    padding:0.05rem;
+    /* border:black 0.03rem solid; */
+  }
+  #language-list{
+    display: none;
+    position: relative;
+    z-index: 10;
+    user-select:none;
+    padding:0 0.05rem;
+    top:0.4rem;
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    background-color: white;
+    padding-bottom: 0.1rem;
+  }
+  .language-item{
+    width:0.8rem;
+    padding-top:0.1rem;
+  }
+  .input-content{
+    display: flex;
+    flex-direction: row;
+    margin-top:0.1rem;
+  }
+  #editWrap{
+    border: 0.03rem solid black;
+    min-width:2.1rem;
+    margin-left:0.1rem;
+    align-content: center;
+    max-height: 0.3rem;
+    min-height: 0.3rem;
+  }
+  #editable{
+    outline: none;
+    padding:0 0.05rem;
+  }
+  
+  #placeholder{
+    color: #a6a6a4; 
+    position: absolute; 
+    pointer-events: none;
+    font-size: 0.12rem;
+    top:0.02rem;
+    left:0.05rem;
+  }
+  .content .swiper-slide {
+    display: flex;
+    gap:4rem;
+    width:6rem;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .content .swiper-slide iframe {
+    display: block;
+    width: 6rem;
+    height:3.38rem;
+    object-fit: cover;
+    border:0.03rem solid #537fb6;
+    border-radius: 0.1rem;
+  }
+  
+  .content .swiper-slide img{
+    user-select:none;
+    display: block;
+    width: 6rem;
+    object-fit: cover;
+    border:0.03rem solid #537fb6;
+    border-radius: 0.1rem;
+  }
+  .line1 {
+    position: absolute;
+    top: -0.6rem;
+    left: 0;
+    width: 10rem;
+    height: 2rem;
+    z-index:10;
+    background: url(../imageJP/line1.png) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .line4 {
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 10rem;
+  height: 2rem;
+  z-index:10;
+  background: url(../imageJP/line4.png) no-repeat ;
+  background-size: 100%;
+  }
+  .line5 {
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 10rem;
+  height: 2rem;
+  z-index:10;
+  background: url(../imageJP/line5.png) no-repeat ;
+  background-size: 100%;
+  }
+  .content .line2 {
+    position: absolute;
+    top: 5rem;
+    height: 2rem;
+    width: 100%;
+    background: url(../imageJP/line2.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg2 .private{
+    position: absolute;
+    bottom: 1.5rem;
+    left:1.5rem;
+    height: 0.85rem;
+    width: 2.9rem;
+    background: url(../imageJP/private.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bg2 .private:hover{
+    position: absolute;
+    bottom: 1.45rem;
+    left:1.4rem;
+    height: 0.9rem;
+    width: 3.1rem;
+  }
+  
+  .bg2 .service{
+    position: absolute;
+    bottom: 1.5rem;
+    right:1.5rem;
+    height: 0.85rem;
+    width: 2.9rem;
+    background: url(../imageJP/service.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bg2 .service:hover{
+    position: absolute;
+    bottom: 1.45rem;
+    right:1.4rem;
+    height: 0.9rem;
+    width: 3.1rem;
+  }
+  .bg2 .offical {
+    position: absolute;
+    bottom: 0.4rem;
+    right:3.5rem;
+    height: 0.85rem;
+    width: 2.9rem;
+    background: url(../images/box2/official.png) no-repeat;
+    background-size: 100%;
+  }
+  .bg2{
+    position: relative;
+    width: 100%;
+    height: 9.35rem;
+    background: url(../images/box2/attention.png) no-repeat ;
+    background-size: 100%;
+  }
+  .content .text{
+    position: absolute;
+    top: 1.35rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem;
+  }
+  .content p {
+    margin-bottom: 0.1rem;
+  }
+  #role-phone{
+    display: none;
+  }
+  #role-pc{
+    display: flex;
+  }
+  #confirm{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.2rem;
+    top: 0.7rem;
+    height: 0.6rem;
+    width: 1.5rem;
+    background: url(../images/content/confirm_btn.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirm:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.15rem;
+    top: 0.68rem;
+    height: 0.7rem;
+    width: 1.6rem;
+  }
+  
+  #confirmAppstore{
+    position: absolute;
+    display: block;
+    left:0.3rem;
+    top: 1.6rem;
+    height: 0.35rem;
+    width: 0.9rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirmAppstore:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:0.25rem;
+    top: 1.58rem;
+    height: 0.5rem;
+    width: 1rem;
+  }
+  #confirmSteam{
+    position: absolute;
+    left:2.6rem;
+    top: 1.6rem;
+    height: 0.35rem;
+    width: 1.1rem;
+    background: url(../images/content/Steam.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirmSteam:hover{
+    cursor: pointer;
+    position: absolute;
+    left:2.62rem;
+    top: 1.59rem;
+    height: 0.5rem;
+    width: 1.15rem;
+  }
+  #confirmGoogle{
+    position: absolute;
+    display: block;
+    right:1.5rem;
+    top: 1.6rem;
+    height: 0.35rem;
+    width: 1.1rem;
+    background: url(../imageJP/Google.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #confirmGoogle:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right:1.47rem;
+    top: 1.59rem;
+    height: 0.5rem;
+    width: 1.15rem;
+  }
+  
+  #tip .p1{
+    position: absolute;
+    font-size: 0.17rem;
+    display: block;
+    left:0.2rem;
+    top: 0.3rem;
+  }
+  
+  #tip .p2{
+    position: absolute;
+    font-size: 0.17rem;
+    display: block;
+    left:1rem;
+    top: 1.35rem;
+  }
+  #tip .p3{
+    position: absolute;
+    font-size: 0.17rem;
+    display: block;
+    left:1.2rem;
+    top: 2.1rem;
+  }
+  #join {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.2rem;
+    top: 2.3rem;
+    height: 0.6rem;
+    width: 1.5rem;
+    background: url(../images/content/join.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  #join:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.18rem;
+    top: 2.29rem;
+    height: 0.7rem;
+    width: 1.55rem;
+  }
+  #tip{
+    display: none;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    background: url(../images/content/confirm.png) no-repeat;
+    width:4rem;
+    height:3rem;
+    z-index: 400;
+    background-size: 100%;
+    border-radius: 0.05rem;
+    box-shadow: grey 0 0 0.09rem ;
+  }
+  .left_1 {
+    position: absolute;
+    top: 21rem;
+    left: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/l.svg) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .right_1 {
+    position: absolute;
+    top: 21rem;
+    right: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/r.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .role {
+    position: relative;
+    width: 100%;
+    height:5.9rem;
+    background: url(../images/role/role_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .left_2 {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/l.svg) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .right_2 {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index:10;
+    background: url(../images/role/r.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    background: url(../images/content/content_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .content .line3 {
+    position: absolute;
+    top: 17.3rem;
+    height: 2rem;
+    width: 100%;
+    background: url(../imageJP/line3.png) no-repeat ;
+    background-size: 100%;
+  }
+  
+  .content .swiper{
+    position: absolute;
+    top: 19.5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  #err{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:50%;
+  background: url(../images/content/confirm.png) no-repeat;
+  width:4rem;
+  height:3rem;
+  z-index: 400;
+  background-size: 100%;
+  border-radius: 0.05rem;
+  box-shadow: grey 0 0 0.09rem ;
+}
+
+#err .p1{
+  font-size: 0.2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+#confirm2{
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  left:1.3rem;
+  top: 2.05rem;
+  height: 0.6rem;
+  width: 1.5rem;
+  background: url(../imageJP/back.png) no-repeat ;
+  background-size: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+#confirm2:hover{
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  left:1.25rem;
+  top: 2.03rem;
+  height: 0.7rem;
+  width: 1.6rem;
+}
+  /* input[type="checkbox"]{
+    border:0.03rem solid #000;
+    background-color:transparent;
+    color:transparent;
+    text-align:center;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+  } */
+  #appstore{
+    position: absolute;
+    display: block;
+    left:1.25rem;
+    top: 1.9rem;
+    height: 0.5rem;
+    width: 1.1rem;
+    background: url(../imageJP/Appstore.svg) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #appstore:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:1.23rem;
+    top: 1.89rem;
+    height: 0.56rem;
+    width: 1.13rem;
+  }
+  #steam{
+    position: absolute;
+    left:3.9rem;
+    top: 1.9rem;
+    height: 0.5rem;
+    width: 1.4rem;
+    background: url(../images/content/Steam.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #steam:hover{
+    cursor: pointer;
+    position: absolute;
+    left:3.9rem;
+    top: 1.89rem;
+    height: 0.56rem;
+    width: 1.44rem;
+  }
+  #google{
+    position: absolute;
+    display: block;
+    left:2.45rem;
+    top: 1.9rem;
+    height: 0.5rem;
+    width: 1.4rem;
+    background: url(../imageJP/Google.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #google:hover{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.43rem;
+    top: 1.9rem;
+    height: 0.53rem;
+    width: 1.45rem;
+  }
+  
+  /* input[type="checkbox"]:after{
+    position: absolute;
+    top:0;
+    left:0.03rem;
+    content:"\2714";
+    font-weight: 600;
+    font-size: 0.1rem;
+  } */
+  .content .login_btn{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left:2.79rem;
+    top: 2rem;
+    height: 0.5rem;
+    width: 1.5rem;
+    background: url(../imageJP/login.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .content .login_btn:hover{
+    position: absolute;
+    display: block;
+    left:2.67rem;
+    top: 1.95rem;
+    height: 0.7rem;
+    width: 1.8rem;
+  }
+  
+  .content .register_btn{
+    position: absolute;
+    display: block;
+    left:1.4rem;
+    top: 0.7rem;
+    height: 2.4rem;
+    width: 0.7rem;
+    background: url(../images/content/register_btn.png) no-repeat ;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .content .register_btn:hover{
+    position: absolute;
+    display: block;
+    left:1.35rem;
+    top: 0.5rem;
+    height: 2.8rem;
+    width: 0.8rem;
+  }
+  
+  .content .step1{
+    position: absolute;
+    display: block;
+    font-size: 0.17rem;
+    left:2rem;
+    top: 0.4rem;
+    width: 3.6rem;
+  }
+  .content .step2{
+    position: absolute;
+    display: block;
+    font-size: 0.25rem;
+    left:1.2rem;
+    top: 0.75rem;
+    width: 5rem;
+  }
+  .content .phone_content{
+    position: absolute;
+    display: block;
+    font-size: 0.17rem;
+    left:2rem;
+    top: 0.9rem;
+    width: 3.6rem;
+  }
+  #country-select{
+    user-select:none;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.15rem; */
+    width:0.6rem;
+    padding:0.05rem;
+    /* border:black 0.03rem solid; */
+  }
+  #country-select-div{
+    border:black 0.03rem solid;
+  }
+  /* #country-select div{
+    font-size: 0.1rem;
+    margin-left: 0.02rem;
+    margin-top: 0.03rem;
+  } */
+  #country-list{
+    display: none;
+    position: relative;
+    z-index: 10;
+    background-color: #fbfaf7;
+    user-select:none;
+    padding:0.05rem;
+    border-top:black 0.03rem solid;
+  }
+
+  #country-list:hover{
+    cursor: pointer;
+    color:black;
+  }
+  .country-item{
+    width:0.6rem;
+    padding-top:0.05rem;
+  }
+  #country-input{
+    background-color:transparent;
+    font-size: 0.13rem;
+    font-weight: 600;
+  }
+  #country-input-div{
+    position: absolute;
+    left:1.2rem;;
+    border:black 0.03rem solid;
+    padding:0.05rem;
+  }
+  #country-checkbox{
+    position: absolute;
+    left:2.1rem;
+    top: 1.7rem;
+    width:0.2rem;
+    height:0.2rem;
+  }
+  
+  #description{
+    position: absolute;
+    font-size: 0.15rem;
+    left:2.35rem;
+    top: 1.73rem;
+  }
+  .content .line2_5{
+    position: absolute;
+    top: 11.3rem;
+    height: 1rem;
+    width: 100%;
+    background: url(../images/content/line22.png) no-repeat ;
+    background-size: 100%;
+  }
+
+  #all_icon{
+    position: absolute;
+    top: 11.5rem;
+    left:2rem;
+    background: url(../imageJP/all_icon.png) no-repeat ;
+    background-size: 100%;
+    width:6rem;
+    height:5.5rem;
+  }
+  #a{
+    position: absolute;
+    top: 12.5rem;
+    left:3rem;
+    background: url(../images/content/50,000.png) no-repeat ;
+    background-size: 100%;
+    width:1.8rem;
+    height:1.8rem;
+  }
+  #b{
+    position: absolute;
+    top: 12.5rem;
+    right:3rem;
+    background: url(../images/content/100,000.png) no-repeat ;
+    background-size: 100%;
+    width:1.8rem;
+    height:1.8rem;
+  }
+  #c{
+    position: absolute;
+    top: 15rem;
+    left:2rem;
+    background: url(../images/content/200000.png) no-repeat ;
+    background-size: 100%;
+    width:1.8rem;
+    height:1.8rem;
+  }
+  #d{
+    position: absolute;
+    top: 15rem;
+    left:4.1rem;
+    background: url(../images/content/300000.png) no-repeat ;
+    background-size: 100%;
+    width:1.8rem;
+    height:1.8rem;
+  }
+  #e{
+    position: absolute;
+    top: 15rem;
+    right:2rem;
+    background: url(../images/content/400000.png) no-repeat ;
+    background-size: 100%;
+    width:1.8rem;
+    height:1.8rem;
+  }
+  
+  .content .registerLayout{
+    position: absolute;
+    left:1.5rem;
+    top: 7.3rem;
+  }
+  .content .register{
+    /* position: absolute; */
+    left:1.5rem;
+    top: 7.8rem;
+    height: 3.9rem;
+    width: 7rem;
+    background: url(../imageJP/adRegister.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .content .register_role{
+    position: absolute;
+    right: 1rem;
+    top:0;
+    width:1.7rem;
+    background: url(../imageJP/register_role.png);
+  }
+  .role .swiper-slide img{
+    display: block;
+    width: 5.5rem;
+    object-fit: cover;
+  }
+
+  .loading-container {
+    text-align: center;
+    background: url(../images/box1/popup.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  .loading-container img {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1.8rem;
+    left: 50%;
+    transform: translate(-50%, 0) rotateY(0); /* 先平移再旋转 */
+    animation: rotate 4s linear infinite; /* 旋转动画 */
+  }
+  .progress {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    background: #e0e0e0;
+    overflow: hidden;
+  }
+  .progress-bar {
+    height: 0.067rem;
+    width: 0;
+    background: #9AC2FF;
+    transition: width 0.1s;
+  }
+  .loading-text {
+    position: absolute;
+    top: 4.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.18rem;
+    color: #5B89BB;
+  }
+  .header_phone {
+    display: none;
+  }
+  .header_web {
+    position:fixed;
+    top:0;
+    left:0.25rem;
+    width: 9.5rem;
+    height: 0.55rem;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 800;
+    display: flex;
+    border-bottom-left-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+  }
+  .bg1{
+    position: relative;
+    width: 10rem;
+    height: 5.62rem;
+    background: url(../images/box1/home_bg.png) no-repeat ;
+    background-size: 100%;
+  }
+  .bg_phone{
+    display: none;
+  }
+  
+  .bg2 .text{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.25rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem;
+  }
+  .bg2 .slideLine{
+    margin-bottom: 0.3rem;
+  }
+  .bg2 p {
+    margin-bottom: 0.15rem;
+  }
+  
+  .content .text{
+    position: absolute;
+    top: 1.35rem;
+    left: 0.5rem;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.25rem;
+    font-weight: 600;
+    color: #537fb6;
+    text-align: center;
+    text-shadow: white 0 0 0.1rem, white 0 0 0.1rem, white 0 0 0.1rem;
+  }
+  .content .text p{
+    margin-bottom: 0.2rem;
+  }
+}
+
+.btn-img{
+  width:1rem;
+}
+
+@font-face
+{
+    font-family: 'cubic11';
+    src: url('../assets/GenSenRounded-B.ttc');
+    font-weight: normal;  
+    font-style: normal;  
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    overflow-x: hidden;
+    width: 10rem;
+  }
+  *{
+  margin: 0;
+  }
+  .w{
+  width: 10rem;
+  margin: 0 auto;
+  }
+  .header_web a img{
+    width:0.28rem;
+  }
+
+  .header_phone .btn{
+    margin-right: 1rem;
+    background-color: white;
+    height:1rem;
+  }
+  #menu a img{
+    width:1rem;
+  }
+.bg1 .logo{
+    position: absolute;
+    left:0.2rem;
+    bottom: 1.8rem;
+    height: 2.5rem;
+    width: 4.5rem;
+    background: url(../images/box1/logo.png) no-repeat;
+    background-size: 100%;
+}
+.bg1 .btn{
+  position: absolute;
+  bottom: 0.9rem;
+  left:1rem;
+  height: 1.4rem;
+  width: 3.2rem;
+  background: url(../imageJP/home_btn.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.bg1 .btn:hover{
+  position: absolute;
+  bottom: 1rem;
+  left:0.8rem;
+  height: 1.4rem;
+  width: 3.6rem;
+}
+.bg1 .text{
+  position: absolute;
+  bottom:0.2rem;
+  right:1.6rem;
+  height: 4.7rem;
+  width: 1.1rem;
+  background: url(../imageJP/home_text.svg) no-repeat;
+  background-size: 100%;
+}
+
+.bg_phone .logo{
+  position: absolute;
+  top: 12rem;
+  left:1.2rem;
+  height: 4.5rem;
+  width: 7.7rem;
+  background: url(../images/box1/logo.png) no-repeat;
+  background-size: 100%;
+}
+.bg_phone .btn{
+  position: absolute;
+  bottom: 0.5rem;
+  left:2rem;
+  height: 3rem;
+  width: 6.5rem;
+  background: url(../imageJP/home_btn.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.bg_phone .text{
+position: absolute;
+top:1.5rem;
+left:.5rem;
+height: 11.5rem;
+width: 2.8rem;
+background: url(../imageJP/home_phone_text.png) no-repeat;
+background-size: 100%;
+}
+
+.left_1 , .right_1 , .left_2 , .right_2{
+  transition: all 0.4s ease-in-out;
+}
+
+.left_1 , .right_1 , .left_2 , .right_2:hover{
+  cursor: pointer;
+}
+
+
+
+.role .swiper{
+  position: absolute;
+  top: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.role .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.role .avatar{
+  position: absolute;
+  left:0.5rem;
+  bottom:0.5rem;
+  display: flex;
+  gap:0.3rem;
+}
+.role .avatar img{
+  z-index:100;
+  width:1.5rem;
+}
+
+
+
+
+
+.link_btn img{
+  transition: all 0.4s ease-in-out;
+}
+
+.link_btn img:hover{
+  width: 0.4rem;
+  border-radius: 1rem;
+  box-shadow: #5fffff 0px 0px 10px;
+}
+
+
+@keyframes rotate {
+  0% {
+      transform: translate(-50%, -5%) rotateY(0);
+  }
+ 35% {
+      transform: translate(-50%, 0%) rotateY(360deg);
+  }
+  50%{
+      transform: translate(-50%, 5%) rotateY(360deg);
+  }
+  75%{
+      transform: translate(-50%, 0%) rotateY(360deg);
+  }
+  100% {
+      transform: translate(-50%, -5%) rotateY(0deg);
+  }
+}
+input::-webkit-input-placeholder {
+  /* placeholder颜色 */
+  color: #a6a6a4;
+  /* placeholder字体大小 */
+  font-family: 'myFont';
+}
+
+
+/* input[type="checkbox"]:checked{
+  color:#000;
+} */
+
+
+#banner_pc {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  top: calc( 100vh / 3 );
+  right:0;
+  background:url(../imageJP/banner_pc.png) no-repeat;
+  background-size: 100%;
+  width:1rem;
+  height:2rem;
+}
+#banner_android {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  bottom:0;
+  background:url(../images/box1/Banner_GooglePlay.png) no-repeat;
+  background-size: 100%;
+  width:100%;
+  height:1.9rem;
+}
+#banner_ios {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  bottom:0;
+  background:url(../imageJP/Banner_AppStore.png) no-repeat;
+  background-size: 100%;
+  width:100%;
+  height:1.9rem;
+}
