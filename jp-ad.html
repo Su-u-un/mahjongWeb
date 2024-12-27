@@ -12,7 +12,7 @@
   <meta name="facebook-domain-verification" content="pb2wkvwyid286jsd94f8e0tqy9vx78" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>《天月麻將》官方網站</title>
+  <title>《天月麻雀》公式サイト</title>
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/indexAd.css">
@@ -68,9 +68,9 @@
     </div>
     <div class="loading-text" id="loadingText">Loading… 0%</div>
   </div>
-  <a id="banner_pc" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=sideicon"></a>
-  <a id="banner_android" href="https://amatsukimj.onelink.me/23qA/ju8mpxty"></a>
-  <a id="banner_ios" href="https://amatsukimj.onelink.me/gXBh/qwuahxj8"></a>
+  <a id="banner_pc" href="https://store.steampowered.com/app/3132860?utm_source=adroute"></a>
+  <a id="banner_android" href="https://amatsukimj.onelink.me/23qA/zy09b1s7"></a>
+  <a id="banner_ios" href="https://amatsukimj.onelink.me/gXBh/fbtxy2ov"></a>
   <div id="tmp">
 
     <div class="header_web">
@@ -179,10 +179,10 @@
       <div class="registerLayout zoomable">
         <div class="register ">
           <img src="./imageJP/register_role.png" alt="" class="register_role">
-          <div class="step2">事前登録プラットフォームを選びます</div>
-          <a id="appstore" href="https://amatsukimj.onelink.me/gXBh/xq6ltvx8"></a>
-          <a id="google" href="https://amatsukimj.onelink.me/23qA/0ma8q5ak"></a>
-          <a id="steam" href="https://store.steampowered.com/app/3132860?utm_source=preregweb&utm_campaign=fullicon"></a></div>
+          <div class="step2">好きなプラットフォームで麻雀の世界へ！事前登録で特典ゲット！</div>
+          <a id="appstore" href="https://amatsukimj.onelink.me/gXBh/3bpczhfs"></a>
+          <a id="google" href="https://amatsukimj.onelink.me/23qA/ldbsquur"></a>
+          <a id="steam" href="https://store.steampowered.com/app/3132860?utm_source=adroute"></a></div>
         </div>
 
       <div id="two_three" class="line2_5"></div>
@@ -272,9 +272,6 @@
 
 </body>
 <script>
-
-  const select = document.getElementById('country-select');
-
   var menu = document.querySelector('#menu');
   var main = document.getElementsByTagName('body')[0];
   var tmp = document.getElementById('tmp');
@@ -734,173 +731,6 @@
       clearInterval(imageInterval); // 加载完成后停止切换图片
     }
   }, imageChangeInterval);
-
-  // 立即登录
-  const login = document.getElementsByClassName('login_btn')[0];
-  const checkbox = document.getElementById('country-checkbox')
-  const input = document.getElementById('editable')
-  const placeholder = document.getElementById('placeholder')
-  const tip = document.getElementById('tip')
-  const err = document.getElementById('err')
-
-  input.addEventListener('input', (event) => {
-    const cursorPosition = getCaretPosition();
-    
-    // 过滤非数字字符
-    let filteredInput = input.innerText.replace(/[^0-9]/g, '');
-    if (filteredInput.length > 11) {
-      filteredInput = filteredInput.slice(0, 11);
-    }
-    // 显示或隐藏placeholder
-    placeholder.style.display = filteredInput.length === 0 ? 'block' : 'none';
-    // 更新内容
-    input.innerText = filteredInput;
-
-    // 恢复光标位置
-    setCaretPosition(Math.min(cursorPosition, filteredInput.length));
-  });
-
-  function getCaretPosition() {
-    const selection = window.getSelection();
-    let position = 0;
-
-    if (selection.rangeCount > 0) {
-      const range = selection.getRangeAt(0);
-      const preCaretRange = range.cloneRange();
-      preCaretRange.selectNodeContents(input);
-      preCaretRange.setEnd(range.startContainer, range.startOffset);
-      position = preCaretRange.toString().length;
-    }
-    
-    return position;
-  }
-
-  function setCaretPosition(pos) {
-    const range = document.createRange();
-    const selection = window.getSelection();
-    const childNodes = input.childNodes;
-    
-    if (childNodes.length === 0) {
-      input.appendChild(document.createTextNode(''));
-    }
-    
-    const textNode = childNodes[0] || input.firstChild;
-    range.setStart(textNode, pos);
-    range.collapse(true);
-    selection.removeAllRanges();
-    selection.addRange(range);
-  }
-
-  const phoneRegex = {
-    TW: /^[0-9]{9,10}$/,
-    HK: /^[0-9]{8}$/,
-    MO: /^[0-9]{8}$/,
-    JP: /^[0-9]{10,11}$/,
-    KR: /^[0-9]{10,11}$/,
-    VN: /^(\+84|0[1-9])[0-9]{8,10}$/,
-    KH: /^(\+855|0[1-9])[0-9]{8,9}$/,
-    TH: /^(\+66|0[1-9])[0-9]{8,9}$/,
-    MM: /^(\+95|0[1-9])[0-9]{6,8}$/,
-    MY: /^(\+60|0[1-9])[0-9]{7,9}$/,
-    SG: /^(\+65|0[1-9])[0-9]{7,10}$/,
-    ID: /^(\+62|0[1-9])[0-9]{7,10}$/,
-    PH: /^(\+63|0[1-9])[0-9]{7,10}$/,
-    IN: /^(\+91|0[1-9])[0-9]{9,10}$/
-  };
-
-  login.addEventListener('click', () => {
-    const selectedRegion = select.getAttribute('value')
-
-    if (!checkbox.checked) {
-      //弹出「請勾選同意隱私條款」
-      err.getElementsByClassName('p1')[0].innerHTML = 'プライバシーポリシーに同意してください'
-      err.style.display = 'flex'
-      return;
-    }
-    else if (!input.innerText) {
-      //弹出手机号为空
-      err.getElementsByClassName('p1')[0].innerHTML = '入力内容が空です。'
-      err.style.display = 'flex'
-      return;
-    }
-    else if(input.innerText.length < 7) {
-      err.getElementsByClassName('p1')[0].innerHTML = '入力エラー'
-      err.style.display = 'flex'
-      return;
-    }
-    else if (selectedRegion === "886") {
-      if (!phoneRegex.TW.test(input.innerText)) {
-        err.getElementsByClassName('p1')[0].innerHTML = '入力エラー'
-        err.style.display = 'flex'
-        return;
-      }
-    }
-    if (selectedRegion === "852") {
-      if (!phoneRegex.HK.test(input.innerText)) {
-        err.getElementsByClassName('p1')[0].innerHTML = '入力エラー'
-        err.style.display = 'flex'
-        return;
-      }
-    }
-    if (selectedRegion === "853") {
-      if (!phoneRegex.MO.test(input.innerText)) {
-        err.getElementsByClassName('p1')[0].innerHTML = '入力エラー'
-        err.style.display = 'flex'
-        return;
-      }
-    }
-    if (selectedRegion === "81") {
-      if (!phoneRegex.JP.test(input.innerText)) {
-        err.getElementsByClassName('p1')[0].innerHTML = '入力エラー'
-        err.style.display = 'flex'
-        return;
-      }
-    }
-    // 在这里添加您的提交逻辑
-    fetch('https://www.amatsukimahjong.com/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ region: selectedRegion, phone: input.innerText })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        if (data.code === 200) {
-          tip.style.display = 'block'
-          // 成功登記後，出示感謝參與頁面時，網址會有所不同
-          history.replaceState(null,"","/jp.html#complete")
-        } else if (data.code === 400) {
-          err.getElementsByClassName('p1')[0].innerHTML = 'この番号はすでに予約されています。'
-          err.style.display = 'flex'
-          return;
-        } else {
-          err.getElementsByClassName('p1')[0].innerHTML = '不明なエラーが発生しました。marketing@cyberalice.co までお問い合わせください。'
-          err.style.display = 'flex'
-          return;
-        }
-      })
-      .catch(error => {
-        err.getElementsByClassName('p1')[0].innerHTML = 'ネットワークに問題があります。もう一度お試しください！'
-        err.style.display = 'flex'
-        return;
-      });
-
-  })
-
-
-  //confirm
-  const confirm = document.getElementById('confirm')
-  const confirm2 = document.getElementById('confirm2')
-
-  confirm.addEventListener('click', () => {
-    tip.style.display = 'none'
-  })
-  confirm2.addEventListener('click', () => {
-    err.style.display = 'none'
-  })
 
   function isIOS() {
     const userAgent = navigator.userAgent;
