@@ -198,7 +198,7 @@
     position: absolute;
     display: block;
     left:2.2rem;
-    top: 1.3rem;
+    top: 1.9rem;
     height: 1rem;
     width: 2.5rem;
     background: url(../images/content/confirm_btn.png) no-repeat ;
@@ -206,7 +206,7 @@
     transition: all 0.4s ease-in-out;
   }
   
-  #confirm:hover{
+  /* #confirm:hover{
     cursor: pointer;
     position: absolute;
     display: block;
@@ -214,13 +214,13 @@
     top: 1.55rem;
     height: 1.1rem;
     width: 2.6rem;
-  }
+  } */
   
   #confirmAppstore{
     position: absolute;
     display: block;
     left:0.6rem;
-    top: 2.7rem;
+    top: 3.7rem;
     height: 0.7rem;
     width: 1.7rem;
     background: url(../imageJP/Appstore.svg) no-repeat ;
@@ -240,7 +240,7 @@
   #confirmGoogle{
     position: absolute;
     right:2.6rem;
-    top: 2.7rem;
+    top: 3.7rem;
     height: 0.6rem;
     width: 2rem;
     background: url(../imageJP/Google.png) no-repeat ;
@@ -260,7 +260,7 @@
   #confirmSteam{
     position: absolute;
     left:4.5rem;
-    top: 2.7rem;
+    top: 3.7rem;
     height: 0.6rem;
     width: 2.1rem;
     background: url(../images/content/Steam.png) no-repeat ;
@@ -283,7 +283,7 @@
     font-size: 0.3rem;
     display: block;
     left:0.3rem;
-    top: 0.5rem;
+    top: 1.1rem;
   }
   
   #tip .p2{
@@ -291,7 +291,7 @@
     font-size: 0.25rem;
     display: block;
     left:1.8rem;
-    top: 2.3rem;
+    top: 3rem;
   }
   #tip .p3{
     position: absolute;
@@ -1005,7 +1005,7 @@
     position: absolute;
     display: block;
     left:1.2rem;
-    top: 0.7rem;
+    top: 1.1rem;
     height: 0.6rem;
     width: 1.5rem;
     background: url(../images/content/confirm_btn.png) no-repeat ;
@@ -1018,7 +1018,7 @@
     position: absolute;
     display: block;
     left:1.15rem;
-    top: 0.68rem;
+    top: 1.08rem;
     height: 0.7rem;
     width: 1.6rem;
   }
@@ -1027,7 +1027,7 @@
     position: absolute;
     display: block;
     left:0.3rem;
-    top: 1.6rem;
+    top: 2.3rem;
     height: 0.35rem;
     width: 0.9rem;
     background: url(../imageJP/Appstore.svg) no-repeat ;
@@ -1040,14 +1040,14 @@
     position: absolute;
     display: block;
     left:0.25rem;
-    top: 1.58rem;
+    top: 2.28rem;
     height: 0.5rem;
     width: 1rem;
   }
   #confirmSteam{
     position: absolute;
     left:2.6rem;
-    top: 1.6rem;
+    top: 2.3rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../images/content/Steam.png) no-repeat ;
@@ -1059,7 +1059,7 @@
     cursor: pointer;
     position: absolute;
     left:2.62rem;
-    top: 1.59rem;
+    top: 2.29rem;
     height: 0.5rem;
     width: 1.15rem;
   }
@@ -1067,7 +1067,7 @@
     position: absolute;
     display: block;
     right:1.5rem;
-    top: 1.6rem;
+    top: 2.3rem;
     height: 0.35rem;
     width: 1.1rem;
     background: url(../imageJP/Google.png) no-repeat ;
@@ -1080,7 +1080,7 @@
     position: absolute;
     display: block;
     right:1.47rem;
-    top: 1.59rem;
+    top: 2.29rem;
     height: 0.5rem;
     width: 1.15rem;
   }
@@ -1090,7 +1090,7 @@
     font-size: 0.17rem;
     display: block;
     left:0.2rem;
-    top: 0.3rem;
+    top: 0.6rem;
   }
   
   #tip .p2{
@@ -1098,7 +1098,7 @@
     font-size: 0.17rem;
     display: block;
     left:1rem;
-    top: 1.35rem;
+    top: 1.9rem;
   }
   #tip .p3{
     position: absolute;
